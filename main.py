@@ -13,7 +13,7 @@ def syllable_count(word):
         count -= 1
     if count == 0:
         count += 1
-    print str(word) + ": " + str(count)
+    # print str(word) + ": " + str(count)
     return count
 
 def get_school_level(read_level):

@@ -1,0 +1,307 @@
+SAFETY regulations in the automotive industry have increasingly become stringent along with the growing customer demands for comfort functionality. For this reason, the development of intelligent vehicle technology has been accelerated. The ultimate goal of intelligent vehicle technology is the realization of an autonomous car that can drive itself without collisions by perceiving the surrounding environment.
+
+The Defense Advanced Research Projects Agency opened the Grand and Urban Challenge competition in the USA to stimulate research for autonomous cars [1]– [2] [3] [4]. The competition helped promote the feasibility of autonomous cars; consequently, global automakers and information technology companies have endeavored to develop commercial autonomous cars.
+
+In Korea, two autonomous vehicle competitions (AVCs) were held in 2010 and 2012 by Hyundai Motor Group in order to establish the foundation of autonomous driving technology. The 2010 AVC focused on fundamental technology such as waypoint tracking and static obstacle avoidance [5], [6]. After two years, the 2012 AVC promoted the development of autonomous driving technology in urban driving environments containing elements such as traffic signals, moving vehicles, and pedestrians [7], [8]. This paper (Part II of a two-part paper) represents the results of autonomous car A1, which was the winner of the 2012 AVC.
+
+In Part I of this two-part paper [9], we proposed a development process for a distributed system. The development process was reformed to improve flexibility and scalability and to discard unnecessary processes based on an AUTomotive Open System ARchitecture (AUTOSAR) methodology and platform [10]– [11] [12] [13] [14]. The process consists of three steps (software component design, computing unit mapping, and the implementation of functions). In the software component design step, software components for autonomous driving were designed, and the flow of information between the components was defined with a virtual functional bus (VFB), which is an abstraction of communication. Second, the designed software components were mapped to each distributed computing unit by considering the computing power, the mounting position, and operating systems (OSs). Finally, a software platform implemented the software components in the assigned computing unit.
+
+Part II of this paper presents a case study on the implementation of an autonomous driving system based on the development process and the distributed system architecture that were introduced in Part I by using an autonomous car, i.e., A1. Various autonomous driving algorithms (perception, localization, planning, and control) and system components of autonomous cars (many heterogeneous sensors, actuators, and computers) are integrated and implemented based on the proposed development process. Each step of the development process (software component design, computing unit mapping, and the implementation of functions) is explained using the implementation example of autonomous car A1. The implementation results show that we can obtain many benefits by using the proposed development process and distributed system architecture.
+
+This paper is organized as follows. Section II presents the 2012 AVC, and Section III provides a system overview and the autonomous driving algorithm of A1. Section IV presents the implementation of the autonomous driving algorithm with the proposed process and platform. Section V presents the autonomous driving results of A1, and Section VI provides the conclusions. The logical flow and experimental results of Part II are tightly coupled with Part I; therefore, it is recommended to read the development methodology of Part I before referring to this paper.
+
+SECTION II.Introduction of 2012 AVC
+To enhance the research of autonomous driving systems, the 2012 AVC aimed at the development of autonomous cars for urban driving. The missions are composed of urban driving scenarios such as traffic signal detection and overtaking slow vehicles, as shown in Table I. Therefore, a participating autonomous car should not only drive a racetrack by itself but also complete the various missions. The racetrack consists of 1.6 km on-road and 1.8 km off-road, as shown in Fig. 1. The red and blue dots indicate the start and finish positions, respectively, and the arrows in the racetrack represent the driving directions. Track-related map information (including waypoints) was provided by the AVC organizers. During the race, most urban-related missions were performed on-road; alternatively, harsh and emergency driving conditions were performed off-road.
+
+TABLE I Time Penalties and Credits of Missions Defined in AVC
+Table
+Figure 1
+Figure 1
+Fig. 1.
+Race track of the 2012 AVC.
+
+View All
+
+Penalties or additional credits are defined for each mission, as shown in Table I. The purpose of the traffic-light and crosswalk detection missions is to demonstrate the ability to detect the status of traffic lights and crosswalk locations, respectively. The vehicle should stop at or pass the crosswalk according to the traffic-light status. The passenger pickup mission aims at detecting a passenger and stopping within 5 m. In the overtaking mission, the vehicle must safely overtake a slow vehicle. In the school zone and sudden obstacle missions, the vehicle should not only comply with the speed limit but also perform an emergency stop that avoids accidents with unexpected obstacles. In the barrier mission, a vehicle should detect a barrier that blocks the road and should stop within 5 m of the barrier. In the construction-site driving mission, a vehicle must pass a construction site that was not provided on the map. The objective of the split road mission is recognizing and following the direction of the traffic light for a split road. In the complex obstacle avoidance mission, the vehicle should find a drivable path without colliding with the complex obstacles. The parking mission aims at detecting a parking lot number and a parking region; the vehicle then parks by itself in the corresponding parking position. If the vehicle succeeds in reverse parking, an additional credit is provided, as shown in Table I. The final winner of the AVC was determined by the sum of the travel time and the penalties for each mission.
+
+SECTION III.Autonomous Car A1: System and Algorithm
+A. System Overview of Autonomous Car A1
+Fig. 2 describes autonomous car A1 and its sensor configuration. The vehicle platform was equipped with an electronics stability control (ESC) system. ESC is used to improve the vehicle dynamic stability by detecting the abnormal vehicle motion and controlling the vehicle motion using a brake system. In order to detect the abnormal vehicle motion, many types of onboard sensors are used for ESC, including wheel-speed sensors, a steering-wheel-angle sensor, and a yaw-rate sensor. The onboard ESC sensor information is shared through the in-vehicle network, i.e., the controller area network (CAN). Therefore, we can access the onboard sensor information of the ESC by connecting to the CAN. A motor-driven power steering system is used to control the steering, and the acceleration pedal signal is emulated for the acceleration. A direct-current motor that is mechanically connected to the brake pedal is used for braking. The gear shift lever is controlled by a motor to determine the direction of the vehicle.
+
+Figure 2
+Figure 2
+Fig. 2.
+Vehicle platform and sensor configuration of A1.
+
+View All
+
+Eight laser scanners are installed on A1, as shown in Fig. 2(b). Two multilayer laser scanners (Ibeo LUX) that measure obstacles up to 200 m away in an optimal environment are mounted on the front bumper to detect distant objects. To detect the adjacent objects around the ego vehicle, four single-layer laser scanners (LMS 151) are installed on each corner. Two single-layer laser scanners (LMS 291) that scan vertically to the ground are installed on the roof to detect barriers, which are thin bars placed horizontally to the ground.
+
+To detect and classify the mission objects, one color camera and three monocameras are installed on the inside of the windshield. The two types of GPS receivers, i.e., a Real-Time Kinematics GPS (RTK-GPS) and a Differential GPS (DGPS), are equipped in the vehicle to measure the position of the ego vehicle in a global coordinate frame. An inertial measurement unit (IMU) that is located at the center of the vehicle is used to estimate the vehicle's dynamic motion.
+
+B. Autonomous Driving Algorithm
+In order to autonomously drive without human intervention, an autonomous car requires five basic functions, i.e., localization, perception, planning, vehicle control, and system management (see Fig. 3). The localization is responsible for the estimation of the vehicle position, and the perception derives a model of the driving environment from multisensor fusion-based information. Based on the localization and perception information, the planning function determines the maneuvers of the autonomous car for safe vehicle navigation. The vehicle control function follows the desired command from the planning function by steering, accelerating, and braking the autonomous car. Finally, the system management supervises the overall autonomous driving system. Detailed descriptions of the autonomous driving algorithm of A1 are shown in the following.
+
+Figure 3
+Figure 3
+Fig. 3.
+Structure of the autonomous driving algorithms in A1.
+
+View All
+
+1) Localization
+A localization system is an essential component of an autonomous car since autonomous cars find optimal paths and control the vehicle motion only if the ego-vehicle position from the localization system is available. A GPS is widely used for localization systems because it directly provides a global position and the ego vehicle's velocity. However, the raw data position of the GPS cannot be used for an autonomous driving system since the quality of the GPS position is significantly affected by satellite signal conditions. The accuracy, reliability, and continuity of the measured GPS position data will rapidly deteriorate when GPS satellite signal conditions are unstable due to blockage and multipaths.
+
+A lot of previous research focused on the fusion of a GPS with additional information such as vehicle motion sensors (wheel-speed sensors, gyros, accelerometers, and magnetic sensors) [15], [16], environment perception data [17], and digital maps [18] in order to compensate for GPS vulnerabilities. The basic principle of an information fusion-based localization system is that GPS position errors are corrected by another information source such as vehicle motion constraints and correction data from matching the perceived landmark with a digital map.
+
+In this paper, in order to cover the various driving conditions, an interacting multiple model (IMM)-filter-based information fusion system is used for the localization system [16], [19]. The localization system can adapt to changing vehicle dynamic characteristics under various driving conditions since the IMM filter selects the kinematics and dynamics model according to driving conditions. A GPS-bias correction algorithm was also applied to the localization system in order to improve the accuracy and reliability of the localization system [18].
+
+2) Perception
+The perception system offers information on surrounding environments using several types of sensor components such as cameras, radars, and laser scanners. A range-sensor-based (a radar and a laser scanner) perception system detects and tracks static and dynamic obstacles [20], [21], whereas a vision-based perception system recognizes various visual objects [22], [23]. The data of the detected and recognized objects are used for the situation assessment of the autonomous driving system.
+
+The perception system of A1 consists of a laser-scanner-based moving object tracking algorithm and a vision-based object detection and classification algorithm. The object tracking system of A1 uses four LMS151s and two Ibeo LUXs to track moving vehicles around the ego vehicle. In particular, an integrated-probabilistic-data-association-filter-based [24] tracking algorithm is implemented using raw data. Tracked dynamic objects are integrated using a covariance-based track-to-track fusion algorithm to reduce the conflict detection from the six laser scanners [25].
+
+There are several visual objects that should be detected and classified by the vision system, i.e., two types of traffic signs, two types of traffic lights, and the pattern objects, as described in Table II. A machine-learning-based scheme is employed to perceive the visual objects. The scheme consists of two main parts (see Fig. 4).
+
+TABLE II Several Visual Objects Including Two Types of Traffic Lights, Two Types of Traffic Signs, and Pattern Objects
+Table
+Table
+Figure 4
+Figure 4
+Fig. 4.
+Machine-learning-based scheme for object recognition.
+
+View All
+
+We construct large training samples for each object at first in the learning process. The diversity of the training samples should be satisfied to establish the high performance of the detector or the classifier; therefore, the training samples are obtained from various illuminations, poses, and background conditions. Representative features are selected for each object in the training step; for instance, Haar-like features are used for traffic-sign detection, and a histogram of oriented gradients (HOG) is employed for the traffic-sign classification. Finally, machine learning algorithms are conducted, such as Adaboost and support vector machines (SVMs), to build detectors and classifiers [26], [27].
+
+The input image is preprocessed for noise reduction and feature extraction in the recognition process. Next, the detector finds the location of the object in the image. The classifier identifies what types of objects are detected based on the detected image. Finally, the object tracking method is applied to filter out false positives and integrate temporal recognition results. For instance, the Adaboost-based traffic-sign detector finds where the circular traffic sign is in the image, and then, the circular traffic sign is categorized as the number one, the number two, or others, which are false positives by the SVM classifier with the HOG feature. The traffic sign is tracked by the nearest neighbor filter, which estimates the position, width, and height of the traffic sign in the image [28]. The performance of the traffic-sign recognition is over 95% under various lighting and weather conditions. From over 30 000 sample images, we evaluate that the recognition system performed well as long as the traffic-sign image is not occluded with rain or saturated with direct light.
+
+3) Planning
+The planning system determines the maneuvers for autonomous cars. Planning algorithms for autonomous cars can be divided into three stages in order to provide safe and reliable maneuvers under various driving situations [29], [30], i.e., global routing, behavior reasoning, and local motion planning. Global routing finds the fastest and safest way to get from the initial position to the goal position. In this stage, a digital map management system and a data searching algorithm are essential for fast routing [31]. Behavior reasoning assesses the driving situation and determines the overall behavior of the autonomous car based on the global route and perception information (see Fig. 5) [32], [33]. The local motion can be then generated in the local motion planning stage based on the global route and the determined behavior. In the last stage, the generated local motion should avoid static and dynamic obstacle collisions for safe autonomous driving [34]– [35] [36].
+
+Figure 5
+Figure 5
+Fig. 5.
+FSM for behavior reasoning.
+
+View All
+
+The planning system of A1 focused on behavior reasoning and local motion planning since the road map contains the global route of the track provided by the competition organizers. The map data represent the road geometry based on WGS84-type information with centimeter-level accuracy. The objectives of A1's behavior reasoning and local motion planning are to perform autonomous driving and to accomplish various missions in real time. Behavior reasoning executes a rule-based decision process based on finite-state machines (FSMs) for an overall driving strategy based on the localization and perception information (see Fig. 5). Incorporated in the decision process, the rule is predefined to follow traffic regulations (e.g., lane keeping, obeying traffic lights, and keeping under speed limits) and to accomplish various tasks.
+
+In order to drive in various driving environments, local motion planning is composed of two types of path planning algorithms, i.e., road-map-based path planning and free-form path planning (see Fig. 6) [5], [37], [38]. Road-map-based path planning mainly works in normal situations such as lane driving, whereas free-form path planning generates a complex path in unstructured environments such as roads under construction. The selected path planning algorithm with the behavior planner iteratively generates a safe and feasible path.
+
+Figure 6
+Fig. 6.
+(a) Lane-keeping and changing-path candidates in the road-map-based path planning algorithm. (b) Graph-structure-based path candidates in the free-form path planning algorithm.
+
+View All
+
+4) Vehicle Control
+Vehicle control is an essential function for guiding the autonomous vehicle along the planned trajectory. The vehicle control should be accurate for safe driving and should be robust under various driving conditions [39], [40]. In order to meet these requirements, the control system should be able to deal with several vehicle characteristics, such as nonholonomic constraints [41], vehicle dynamics [42], and physical limitations (e.g., constraints on the steering system and maximum allowable tire forces). In addition, a controller is required to solve the tradeoff problem between the tracking performance and the ride comfort [43].
+
+To deal with these vehicle characteristics in a practical way, the vehicle control system of A1 is divided into a lateral controller and a longitudinal controller (see Fig. 7). The lateral control algorithm assumes that the vehicle moves along the Ackermann steering geometry [42]. Based on this assumption, the target steering angle is obtained from a lateral error of the preview points in the generated path. In order to accurately track the path, the preview points and the feedback gains are scheduled according to the vehicle speed and the path curvature information.
+
+Figure 7
+Figure 7
+Fig. 7.
+Structure of the vehicle control system.
+
+View All
+
+The longitudinal control algorithm derives the target position of the acceleration and brake pedals from reference inputs. In order to cope with various driving situations, the longitudinal controller is composed of three modes, i.e., speed control, distance control, and emergency stop. The speed control mode, which is based on the proportional–integral–derivative-control-law-based feedback controller and the vehicle-powertrain-model-based feedforward controller, derives the target acceleration from the target and current vehicle velocities. Based on the target acceleration, the desired wheel torque is converted to manipulate the acceleration and brake pedals. In the distance control mode, an additional desired velocity calculation function is added for position control. The function generates the desired velocity using a position error between the current and target locations. When the autonomous car meets unexpected situations such as system faults and sudden obstacles, the emergency stop mode produces maximum deceleration for accident avoidance.
+
+5) System Management
+For the development and operation of an autonomous car, the system manager is essential for supervising the entire autonomous driving system. Basically, the system manager of A1 performs the following functions: as a human–machine interface (HMI), driving mode management, and fault management. The HMI consists of an operating interface (a remote controller and an e-stop switch) and a display system that indicates the health status of the car, the position, the path, and the surrounding object information. For the operation of A1, the driving mode is divided into three states, i.e., manual, run, and pause. In the manual mode, A1 is manipulated by the human; in the run mode, A1 drives by itself. If the operator pushes the emergency stop switch or a system fault occurs, the system mode is converted to the pause mode. The fault management system monitors the health status of all modules for safe driving. If the health status of the critical module for autonomous driving fails or does not update for a certain period of time, fail management algorithms, which are embedded in each module, determine the state of the system health as failed and convert the autonomous mode to the pause mode.
+
+SECTION IV.Implementation of Distributed System Architecture of A1 Based on Software Development Process and Platform
+The autonomous driving algorithm of A1 has been developed based on the proposed system development process and platform. The autonomous driving algorithms of A1 are first organized as software components. The software components are then mapped to the proper computing units. Finally, the implementations of the software components are performed on the computing units based on the common software platform and in-vehicle network.
+
+A. Software Component Design
+Fig. 8 describes the designed software components and information flow of autonomous car A1. The A1 software architecture is composed of four parts, i.e., a sensor interface, autonomous driving algorithms, an actuator interface, and a development interface. Through the sensor interface, the various types of sensor data are entered into the autonomous driving algorithms. The GPS provides the global position, speed, and heading angle data for the positioning algorithm. The IMU and onboard sensors provide the dynamic information of the ego vehicle to the estimation algorithm of the vehicle motion. The cameras and laser scanners measure the information about the external environment around the ego vehicle.
+
+Figure 8
+Figure 8
+Fig. 8.
+Software architecture of autonomous car A1.
+
+View All
+
+Based on the sensor information, the autonomous driving algorithms generate the control inputs of the vehicle actuators to drive the vehicle autonomously. The vehicle state estimation algorithm estimates the vehicle's dynamic states by integrating the motion sensor information with the vehicle system models. The estimates of the vehicle state are incorporated into the GPS data to more accurately and reliably estimate the ego vehicle's position. The vision algorithms detect and classify the objects in the driving environment based on the image information from the color cameras and monocameras. The road barriers and the static and dynamic obstacles are detected and tracked using the detection and tracking algorithms. The sensor fusion algorithm integrates all of the information from the perception algorithms and improves the accuracy and integrity of the primitive perception data. The planning algorithm uses the integrated perception data to determine the behavior and motion of the vehicle. The vehicle control algorithm calculates the control inputs from the vehicle actuator, such as steering, braking, and acceleration, to follow the desired behavior and motion from the planning algorithm.
+
+The actuator interface conveys the actuator control input that is generated from the autonomous driving algorithm to the low-level controllers for steering, braking, and accelerating. The development interface provides the safety and debugging functions for developing the autonomous system, including the emergency stop, the wireless stop, the driving mode selection, and monitoring.
+
+The information flows between each software component are described with a VFB, as shown in Fig. 8. There are two types of communication between each software component, i.e., client–server and sender–receiver. At the client–server interface, the server provides the information to clients when the clients request the service. At the sender–receiver interface, the sender provides the information to the receiver without any request. Since the information flows are abstracted with the VFB, the software component designer does not need to be concerned with the constraints of the computing hardware and network. The designer can only concentrate on the design of the functional aspects of the software components.
+
+B. Computing Unit Mapping
+The layout of the distributed computing units and the results of the software component mapping are represented in Fig. 9. The software components of the autonomous driving algorithm and the system interfaces are distributed into the various types of computing units. The computing units of A1 consist of two embedded industrial computers, i.e., a rapid controller prototyping (RCP) electronic computing unit (ECU) and 13 ECUs that are based on 32-bit microcontroller units (MCUs).
+
+Figure 9
+Figure 9
+Fig. 9.
+Mapping of the autonomous driving algorithms and the computing units.
+
+View All
+
+The mapping of the software components into computing units is performed by an experienced system designer. The designer considers several of the constraints for mapping the software components.
+
+The sensor fusion, planning, and vision software components are mapped into two embedded industrial computers (Intel Core 2 Duo 1.50 GHz with 2-GB random access memory using Windows 7) for several reasons. First, the software components require high computing power to run; consequently, the software components are mapped onto a high-performance computer system. In addition, all of the software components cannot be assigned into one computing unit; therefore, the software components are divided into two groups in consideration of the algorithm execution time and dependence (see Table III). The second reason is the hardware and software dependence of the component systems. Many commercial sensors and monitoring devices support general-purpose OS (GPOS) environments such as Windows and Linux. Most software development kits of sensors (such as device drivers and libraries) are supplied as the GPOS version. Furthermore, some specific libraries such as OpenCV and BOOST, which can allow to accelerate the implementation of vision or planning applications, are easy to use in the GPOS environments [44], [45].
+
+TABLE III Execution Time of Software on Industrial Computer
+Table
+In addition, the vehicle control software component is mapped in an RCP-ECU. The RCP-ECU has high real-time performance for time-critical systems such as a vehicle control algorithm and provides development flexibility obtained from a well-organized user interface between a model-based control algorithm and implementation. Finally, the steering and brake software components are placed in one ECU because the components should simultaneously operate longitudinal and lateral control actuations with real-time constraints. The ECU is installed next to the actuators to reduce the wire length between the ECU and the actuators as well as to obtain a fast response. Other software components are mapped in a similar way.
+
+C. Implementation of Functions
+The software components assigned to the computing units are implemented using the proposed software platform and in-vehicle network. An example of the implementation of the software components for the vehicle state estimation and positioning is described in Fig. 10. Two ECUs are used for the implementation of the example software components, and each ECU is connected by FlexRay networks.
+
+Figure 10
+Figure 10
+Fig. 10.
+Example of the implementation of the software components using the common software platform.
+
+View All
+
+The software component of each function can be divided into several functional subcomponents. The vehicle state estimation component of the example is divided into longitudinal and lateral vehicle state estimations. The functional components are independent of the computing hardware and network because there is a runtime environment (RTE). The RTE layer provides the standard interface between the application layers and the basic software layer; therefore, the dependence between the software components and the hardware can be minimized. The RTE also provides the scheduling interface between the application software component and the OS of the computing unit. The basic software layer provides the basic software components that are highly dependent on the computing unit and networks. In the example, the OSEK/VDX real-time OS (RTOS) is used for the scheduler, and serial communication is used for the sensor networks for the IMU, the DGPS, and the RTK-GPS. A CAN is used for accessing the vehicle network to obtain the onboard sensor information. FlexRay, which is the backbone network of A1, is used to share the processing results with the other computing units.
+
+As proposed in Part I, the FlexRay network design process has two parts, i.e., one part is a network parameter configuration, and the other is a network message scheduling.
+
+In the network parameter configuration step, the FlexRay network has more than 70 configuration parameters in order to operate properly, including cycle configuration parameters, start-up- and wake-related parameters, and clock-correction-related parameters. These parameters should be appropriately configured in order to take advantage of the time-triggered protocol. In the early stage of the autonomous car development, the network parameter is heuristically configured to allow for the modification of the network design since a change in the system configuration frequently occurs. We can determine which data should be transferred through the FlexRay network after the system configuration is fixed. The static slot length and the communication cycle length can be obtained using the FlexRay network parameter optimization method based on the determined network data [46]. This method performs the optimization of the static slot length and the communication cycle length to minimize the cost of the protocol overhead JO, the cost of the wasted network resources JU, and the cost of the worst case response time JCOM. Fig. 11 shows the optimization costs ( JO, JU, and JCOM) of the FlexRay parameters of A1.
+
+Figure 11
+Figure 11
+Fig. 11.
+Optimization results of the FlexRay parameters.
+
+View All
+
+In order to optimize the static slot length in the FlexRay network, the optimization problem is formulated using JO and JU as follows:
+minsubject toJSTslot=JO+JU=(C0+x⋅BSS)⋅∑k=1n[msgSTkx]+∑k=1n(x⋅[msgSTkx]−msgSTk)X={x|x=2⋅i,for i=1,2,…,max([msgSTk2])},k=1,2,…,n(1)(2)
+View SourceRight-click on figure for MathML and additional features. where msgSTk is the byte length of each static (ST) message, C0 is the sum of the protocol overhead length, including the header, the trailer, the transmission start sequence, the frame start sequence, the frame end sequence, the idle delimiter, the action-point offset, and the safety margin. The byte start sequence (BSS) is the additional coding element for each byte of the frame. As described in the aforementioned optimization problem, the cost for the protocol overhead is closely related to the total number of ST frames. If we choose a long ST slot length x, the ST messages are divided into a smaller number of ST frames; thus, we can reduce the protocol overhead cost. However, if ST slot length x is long, a large amount of unused network resource will result. Therefore, the protocol overhead and the unused network resources must be considered concurrently. In Fig. 11(a), the two dotted green lines represent the costs of the protocol overheads JO and the wasted resources JU; in addition, the dotted blue line describes the weighted sum of JO and JU. From the results, the static slot length is selected as 8 B, which is the minimal point of the cost.
+
+TABLE IV Worst Case Execution Time of Safety-Related Applications
+Table
+Figure 12
+Figure 12
+Fig. 12.
+Synchronization of the safety applications of A1.
+
+View All
+
+The communication cycle length is optimized to minimize the worst case response time cost JCOM of the static and dynamic frames while satisfying the schedulability of all messages. The optimization problem is denoted as follows:
+minJCOMsubject to=∑k=1nRSTi=∑i=1n(Ccom.cycle+Ci)=∑i=1n{(CST+CDYN+CNIT)+Ci}=∑k=1n{(STslot⋅ns+d⋅MS+200⋅MT)+Ci}nSTfail=0(3)(4)
+View SourceRight-click on figure for MathML and additional features. where RSTi is the worst case response time of ST frame i. CST, CDYN, and CNIT are the durations of the ST segment, the dynamic (DYN) segment, and network idle time (NIT), respectively, and Ci is the communication time of frame i. nSTfail is the number of unschedulable ST frames. In cost function JCOM, RSTi is proportional to the length of the communication cycle; thus, CST is determined by the duration of ST slot STslot and the number of ST slots ns, and CDYN is defined by the number of minislots d and the number of bits in a minislot (MS). CNIT is assumed as 200 macroticks (MTs) . Since the communication cycle is determined by the summation of CST, CDYN, and CNIT, the optimal communication cycle is determined as the minimum communication cycle within; unschedulable ST frames do not exist. Fig. 11(b) shows the cost of the worst case response time and the number of unschedulable frames. The results show that a communication cycle length over 9.634 ms is acceptable; consequently, we selected 10 ms as the communication cycle length in the FlexRay network of A1.
+
+Network messages are scheduled to synchronize the application software with the FlexRay network after the network parameters are optimized. The synchronization of the network messages can minimize network delays and make the delay predictable. This is a powerful advantage, particularly for the safety-related applications of autonomous cars because the unexpected behavior caused by an unpredictable long network delay can be eliminated. The worst case execution time of the application software should be measured in order to synchronize the messages. The worst case execution time can be found from the execution time measurements of several test cases. The test cases are generated by a code coverage analysis tool provided by MATLAB and Simulink. The measured worst case response time is represented in Table IV. The measured worst case execution time allows the network messages to be assigned to each static slot for the synchronization of the application software.
+
+Fig. 12 describes the synchronization results of the network message for the safety-related applications of A1 (see Table IV). The vehicle state estimation ECU starts computing after receiving the sensor data that are from the onboard sensor and GPS. The FlexRay network is updated with the results after the calculations for the vehicle state estimation are completed. The positioning algorithm then uses the vehicle state estimation results for the position estimation and updates the FlexRay network with the position estimates. In the same manner, the vehicle control operates after receiving the positioning information and generates control inputs for accelerating, braking, and steering. Finally, the acceleration, braking, and steering ECUs receive the control input and control each actuator.
+
+Ethernet and CANs, which are event-triggered protocols, are also used for the communication system as the local sensor networks of A1. The point-to-point network topology between a sensor and a computer is applied for the event-triggered network to minimize the effect of jitter in the event-triggered protocol.
+
+D. Implementation Results
+1) Development Process and Software Platform
+The proposed software development process and platform have various advantages for the development of autonomous car A1. The distributed system architecture could reduce the computational complexity of A1. When the development of A1 began, we used a centralized system architecture. Since the initial requirement was waypoint tracking in an obstacle-free region, there was no problem with the computational resource. However, as requirements increased, such as moving obstacle tracking, traffic signal detection, and so on, the centralized system could not schedule all of the functions. In order to resolve this problem, we considered a more high-performance computational unit, but it could not resolve the computational complexity. In addition, it required additional costs and power sources. Therefore, a distributed system architecture was applied for decentralizing the computational load. Consequently, we reduced the computational complexity through decentralized computation, as well as saved costs and power sources.
+
+Figure 13
+Figure 13
+Fig. 13.
+Execution time of the vehicle control and localization algorithms. (Upper) Centralized system architecture's cases with a single PC. (Lower) Distributed system architecture's cases with multiple ECUs.
+
+View All
+
+The fault management system was applied to A1 in order to operate the autonomous car safely. Every computing unit in A1 basically generates a life signal for a health status check. Based on the signal, the fault management algorithm diagnoses the status and will back up the failed unit. By applying the fault management algorithm, the distributed autonomous driving system of A1 prevented some accidents due to negligence or software error.
+
+The distributed system architecture of A1 was able to reduce the noise and the cost from the wiring. Initially, the acceleration pedal position sensor in A1 was too far from the vehicle controller; hence, the wire between the sensor and the controller was too long. The long wire length created noise in the measurement of analog signals and caused the degradation of the vehicle control performance. In order to resolve these problems, a measurement function for the acceleration pedal position sensor was transferred to another ECU located near the sensor, and the length of the wires was greatly reduced. As a result, not only was the noise problem resolved, but the stability of the controller was also increased. In addition, this reconfiguration work was not difficult due to the transferability of the proposed software architecture.
+
+The proposed distributed architecture could support the development and testing being carried out simultaneously. In the development of A1, many developers were involved. Depending on the role of each development part, each individual person developed and tested his/her own software. In order to improve the development efficiency, the individual software could be independently developed and tested by considering the functional and temporal characteristics.
+
+The proposed development process and system platform enabled flexible system changes and the extension of the system structure of A1. For instance, when the brake controller of A1 was developed, there were frequent hardware changes due to performance limitations. However, since the system development process is not dependent on the hardware, the development of the brake controller software was not influenced by the hardware change. As another example, there were several changes to the sensor layout in A1. When two laser scanners were added to detect rear objects, additional software was not required to be developed. The reason for this is that the existing software can be reused and modified easily.
+
+TABLE V Comparison Between FlexRay and CANs of A1
+Table
+With respect to the real-time performance, the proposed distributed system architecture exhibits more reliable computational processing than the centralized system architecture. Fig. 13 depicts the execution time of the localization and vehicle control algorithms in each system architecture. Complete execution within an accurate period is an important factor for reliable autonomous driving in real time since the localization and vehicle control algorithms are safety-critical functions for autonomous driving systems. In Fig. 13, the centralized platform generally has excellent computational performance in both the localization and vehicle control operations. However, there exist several peak execution times that do not satisfy the execution time constraints (see Fig. 13). The reason for this is that the unexpected and sudden increase in the computation load for the other task affects the operation of the localization and control tasks.
+
+Figure 14
+Figure 14
+Fig. 14.
+Period jitters in the FlexRay and CANs of A1.
+
+View All
+
+The operation of the localization and the vehicle control in the distributed system consumes more execution time than the centralized case due to the computation power limitations of the implemented ECUs. However, the tasks of the localization and the vehicle control in the decentralized real-time embedded system are schedulable within the execution time constraint since the distributed ECUs relatively run few tasks and operate with the OSEK-OS that is a standard RTOS for automotive embedded software [47], [48] (see Fig. 13). The distributed system architecture is more suitable for hard real-time applications.
+
+2) FlexRay Network
+There are several advantages to using the FlexRay-network-based distributed system. A high bandwidth is one of most obvious advantages. The high bandwidth of the FlexRay network allows for sharing a large amount of information, as compared with the CAN, which is the most widely used for in-vehicle networks in the automotive industry. For example, the FlexRay network is able to send 211 messages every 10 ms. However, the number of messages that can be transmitted by the CAN is limited to 74 every 10 ms. Since a total of 156 messages for A1 are used in the final network configuration, a periodic message transmission is possible without delay. On the other hand, if the CAN is used as the backbone network, a transmission delay of a message will occur, and the overall system performance can be reduced, as shown in Table V.
+
+Figure 15
+Figure 15
+Fig. 15.
+Results of the crosswalk/traffic-light detection missions.
+
+View All
+
+The time-triggered scheme of the FlexRay network ensures exact periods by using the global time. In addition, since the time of the transmission and reception of network messages can be predicted, the application software can be synchronized with the global time. Otherwise, the event-triggered scheme of the CAN cannot guarantee the periodic transmission of a message. As shown in Fig. 14, the static frames in the FlexRay network are transmitted without delay, whereas CAN messages are transmitted with period jitter. In addition, the period jitters of the CAN differ according to the priority of a message. Therefore, when compared with the CAN, the time synchronized application software of FlexRay can be expected to have better performance.
+
+SECTION V.Driving Results of A1 in 2012 AVC
+In order to evaluate the validity of the proposed system architecture and development process, A1 drove itself on the racetrack and performed the missions in the 2012 AVC, as shown in Fig. 1 and Table I. The pictures in Figs. 15– 23 represent the mission results of A1. Each picture is a snapshot from the driving videos, which are taken from inside and outside of A1. As shown in these results, A1 not only drove the entire racetrack safely but also completed the missions perfectly. The maximum speed of A1 is up to 80 km/h during the final race. A1 won the championship of the 2012 AVC with a final time of 6 min and 52 s, with all missions completed. The final driving video is available at http://youtu.be/dzE2WReJeSM.
+
+Figure 16
+Figure 16
+Fig. 16.
+Results of the split-road mission.
+
+View All
+
+Figure 17
+Figure 17
+Fig. 17.
+Results of the overtaking mission.
+
+View All
+
+Figure 18
+Figure 18
+Fig. 18.
+Results of the school zone and sudden obstacle missions.
+
+View All
+
+Figure 19
+Figure 19
+Fig. 19.
+Results of the barrier mission.
+
+View All
+
+Figure 20
+Fig. 20.
+Results of the construction-site mission.
+
+View All
+
+Figure 21
+Figure 21
+Fig. 21.
+Results of the passenger pickup mission.
+
+View All
+
+Figure 22
+Fig. 22.
+Results of the complex obstacle mission.
+
+View All
+
+Figure 23
+Fig. 23.
+Results of the parking mission.
+
+View All
+
+SECTION VI.Conclusion
+This paper (Part II) has described the implementation of the autonomous car that follows the development methodology proposed in Part I.
+
+In Part I, we addressed several advantages of the methodology from the following perspectives. First, the distributed system architecture can reduce the computational complexity of the entire system, guarantee fault-tolerant characteristics, and enhance the modularity of the system. Second, the development process provides comprehensive instructions for designing and integrating the distributed systems of an autonomous car. Finally, the layered architecture-based software platform (that originated from AUTOSAR) can improve the reusability, scalability, transferability, and maintainability of the application software.
+
+In this paper, we have presented the case study of the development methodology by implementing the autonomous car. First, the five essential technologies of autonomous driving (localization, perception, planning, vehicle control, and system management) have been briefly explained. Next, the three steps (the software components design, computing unit mapping, and the implementation of functions) of the proposed development process have been executed according to the instructions of the development methodology. In the procedure, several advantages of the distributed system are emphasized, comparing the centralized system, i.e., the computational load distribution, the enhancement of system safety by cross-checking the life signal, noise, and cost reduction from the wiring, and the achievement of a flexible system against changes or extensions. The accomplishments of the autonomous car A1 that won the 2012 AVC in Korea prove the validity of the proposed development methodology.
+
+However, the case study was only performed based on the specific computing platform, such as Windows and OSEK/VDX. The authors plan to extend the development process to adapt more software platforms such as Linux and the Robot OS for developing autonomous driving systems [49].

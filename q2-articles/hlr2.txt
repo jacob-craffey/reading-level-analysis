@@ -1,0 +1,907 @@
+1125
+NOTE
+BAIL REFORM AND RISK ASSESSMENT:
+THE CAUTIONARY TALE OF FEDERAL SENTENCING
+Across the country, from New Jersey to Texas to California, bail reform
+is being debated, implemented, and litigated at the state and local
+levels. Lawmakers and the public are learning that cash bail is excessive,
+discriminatory, and costly for taxpayers and communities. With
+promises to replace judicial instincts with validated algorithms and to
+reserve detention for high-risk defendants, risk assessment tools have
+become a hallmark of contemporary pretrial reform. Risk assessment
+tools have proliferated despite substantial criticisms that the tools depend
+upon and reinforce racially biased data and that the tools’ accuracy
+is overblown or unknown. Part I of this Note examines contemporary
+bail practices, recent reforms, and risk assessments’ promises and
+shortcomings. Part II discusses federal sentencing reform, which originally
+sought a more empirical approach to criminal justice but failed.
+Part III applies the lesson of sentencing reform to bail reform today.
+Despite endorsing empirical tools, legislatures are prone to interfering
+with the evidence that informs those tools or with the tools themselves.
+Even after reforms, system actors retain misaligned incentives to incarcerate
+too many people. Technocratic instruments like risk assessments
+may obscure but cannot answer tough, fundamental questions of system
+design. But recent pretrial reforms have shown early signs of progress.
+If risk assessments are paired with adequate safeguards, sustained reductions
+in incarceration and progress toward equal treatment may be
+possible.
+I. BAIL REFORM NOW
+Kalief Browder was a sixteen-year-old kid living with his family in
+the Bronx when the police picked him up off the sidewalk and charged
+him with robbery, grand larceny, and assault — for a crime he had not
+committed.1 A judge set his bail at three thousand dollars, which was
+more than his family could afford. So Browder was sent to Rikers
+Island, New York City’s notorious and abusive jail,2 where he awaited
+trial for three years.3 For at least two of those years, jail guards forced
+him to live in solitary confinement. When not in solitary, he was often
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– 1 Jennifer Gonnerman, Before the Law, NEW YORKER (Oct. 6, 2014), https://www.newyorker.
+com/magazine/2014/10/06/before-the-law [https://perma.cc/4HVL-KY7Y]. 2 See, e.g., Nick Corasaniti, Rikers Island Commission Unveils Plan to Shut Down Jail Complex,
+N.Y. TIMES (Apr. 2, 2017), https://nyti.ms/2nMtJ15 [https://perma.cc/Q8DN-HXEJ]. 3 Gonnerman, supra note 1.
+1126 HARVARD LAW REVIEW [Vol. 131:1125
+beaten by guards and other inmates.4 Every now and then, the district
+attorney’s office would offer him plea deals, including an offer that
+would have let him leave jail that day for time served.5 But because he
+was innocent, Browder refused to plead guilty.6 After imprisoning
+Browder for three years, the Bronx District Attorney’s office dropped
+the case, dismissing all charges against him.7 There was no trial.
+Browder had missed years of high school and graduation.8 The trauma
+of jail and solitary confinement haunted Browder; without a job or a
+high school diploma, he found himself unable to adjust to regular life.
+Two years after being released, Kalief Browder killed himself.9
+Through news and social media,10 Browder’s tragic story and the
+stories of others like him have brought renewed public attention to the
+issue of bail and pretrial detention in our country. In the past year alone,
+the editorial boards of the Los Angeles Times, Washington Post, and New
+York Times have all written about the need to abolish cash bail.11 NBC
+and Vice News have run special features on cash bail and opportunities
+for reform.12
+Bail practices vary, but most jurisdictions adhere to the following
+methods13: After charges are filed against someone, a judge or magistrate
+first determines whether to jail the person without the possibility
+of release until the case is over.14 In most jurisdictions, a person may
+be detained pretrial only if there is a high risk that the person will not
+appear in court or that the person will be a danger to the community
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– 4 Id. 5 Id. 6 Id. 7 Id. 8 Id. 9 Jennifer Gonnerman, Kalief Browder, 1993–2015, NEW YORKER (June 7, 2015), https://
+www.newyorker.com/news/news-desk/kalief-browder-1993-2015 [https://perma.cc/7UXA-992V]. 10 Id.; Gonnerman, supra note 1; #KaliefBrowder, TWITTER, https://twitter.com/hashtag/
+KaliefBrowder [https://perma.cc/GS5E-X37D]. 11 Editorial, How the Poor Get Locked Up and the Rich Go Free, L.A. TIMES (Aug. 16, 2017,
+3:00 AM), http://www.latimes.com/opinion/editorials/la-ed-bail-reform-20170816-story,amp.html
+[https://perma.cc/672A-GMZG]; Editorial, Fixing the Unfair Bail System Is Worth the Costs,
+WASH. POST (Sept. 9, 2017), http://wapo.st/2vN9VgX [https://perma.cc/4EAC-S5UQ]; Editorial,
+Cash Bail’s Lonely Defender, N.Y. TIMES (Aug. 25, 2017), https://nyti.ms/2w5NPce [https://
+perma.cc/GAX3-6JEW]. 12 Jon Schuppe, Post Bail, NBC NEWS (Aug. 22, 2017), https://www.nbcnews.com/specials/bailreform
+[https://perma.cc/2XHA-MPU6]; Crime and Capitalism — Maryland’s Cash Bail System,
+VICE NEWS TONIGHT, https://video.vice.com/en_id/video/crime-and-capitalismmarylands-cashbail-system/586d88f30101f09103513f83
+[https://perma.cc/8ARC-455R]. 13 For a more detailed explanation of how bail works, see generally CRIMINAL JUSTICE
+POLICY PROGRAM, HARVARD LAW SCH., MOVING BEYOND MONEY: A PRIMER ON BAIL
+REFORM (2016) [hereinafter BAIL PRIMER]. 14 Id. at 5.
+2018] BAIL REFORM AND RISK ASSESSMENT 1127
+before trial.15 The Supreme Court has cautioned that “[i]n our society,
+liberty is the norm, and detention prior to trial or without trial is the
+carefully limited exception.”16
+A judge can then decide to release the person if they promise to return
+to court (release on personal recognizance), conditionally release the
+person, or release the person on bail.17 With conditional release, a person
+must fulfill conditions such as checking in with pretrial services,
+drug testing, or electronic monitoring.18 With bail, a person can be released
+on a secured or unsecured bond. For an unsecured bond, the
+defendant doesn’t have to pay anything up front but will owe the court
+money if they miss upcoming court dates.19
+“Cash bail” or “money bail” almost always refers to secured bonds.20
+For a secured bond, the defendant will be released from jail only upon
+paying the bond amount to the court. Many jurisdictions assign a defendant
+a predetermined bond amount based on the criminal charge,
+without an assessment of the defendant’s ability to pay.21 Bail bondsmen
+will charge the defendant a fee, often 10% of the bail amount, to
+pay the bond on the defendant’s behalf.22 When the defendant arrives
+at a later court date, the court will return the money to the bail bondsman,
+who retains the defendant’s fee as profit. If someone is unable to
+pay for bail or unable to pay a bail bondsman’s fee, the state will jail
+them until their case is over or the bond is paid.23
+Cash bail results in excessive detention, wealth- and race-based discrimination,
+and high costs to taxpayers and communities. Nearly twothirds
+of the people in jails in the United States have not been convicted
+of a crime.24 On any given day, that’s more than 450,000 people,25 many
+of whom don’t need to remain in jail: a judge has already determined
+that they are not a flight or dangerousness risk. If they could pay their
+bail or bail bondsman’s fee, they could walk out the front door and go
+home. The pretrial imprisonment rate in the United States is among the
+highest in the world — more than four times the world’s median pretrial
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+15 Id. at 5–6; Laura I. Appleman, Justice in the Shadowlands: Pretrial Detention, Punishment,
+& the Sixth Amendment, 69 WASH. & LEE L. REV. 1297, 1330 (2012). 16 United States v. Salerno, 481 U.S. 739, 755 (1987). 17 BAIL PRIMER, supra note 13, at 5–6. 18 Id. at 6–7, 17–18. 19 Id. at 5–6. 20 Id. at 6. 21 Id. at 11. 22 Adam Liptak, Illegal Globally, Bail for Profit Remains in U.S., N.Y. TIMES (Jan. 29, 2008),
+https://nyti.ms/2nESga8 [https://perma.cc/B6SY-Y68P]. 23 Id. 24 TODD D. MINTON & ZHEN ZENG, BUREAU OF JUSTICE STATISTICS, JAIL INMATES AT
+MIDYEAR 2014, at 4 (2015). 25 ROY WALMSLEY, INST. FOR CRIMINAL POLICY RESEARCH, WORLD PRETRIAL/REMAND
+IMPRISONMENT LIST 2 (3d. ed. 2016).
+1128 HARVARD LAW REVIEW [Vol. 131:1125
+imprisonment rate.26 With just over 4% of the world’s population, the
+United States has almost 20% of the world’s pretrial jail population.27
+Jail populations have steadily increased in recent decades, largely because
+more people are being incarcerated pretrial.28 A generation ago,
+most people awaiting trial for a felony charge were released on their
+own personal recognizance, but now similarly situated people are released
+only if they can afford bail.29 People jailed pretrial are disproportionately
+black and Hispanic,30 and one study has found that “Hispanic
+and black defendants are more likely to be detained [pretrial] than
+similarly situated white defendants.”31
+With staggering incarceration numbers come staggering costs — for
+the public and for those who are detained, their families, and their communities.
+Taxpayers spend approximately $38 million a day — or $14
+billion a year — on pretrial detention.32 Those who are detained face a
+cascading avalanche of difficulties. They can lose their jobs because
+they cannot go to work; without work and trapped in jail, they can lose
+their homes because they cannot pay rent; separated from their families
+and unable to support them, they can lose custody of their children or
+leave an elderly or sick family member without a caregiver.33 As the
+Supreme Court has observed, someone detained pretrial “is hindered in
+his ability to gather evidence, contact witnesses, or otherwise prepare
+his defense.”34 Innocent people sometimes accept plea offers because
+pleading guilty allows them to go home, whereas maintaining their innocence
+would require staying in jail for months or years awaiting
+trial.35 Suicide remains the leading cause of death in American jails.36
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+26 Id. at 5–11. The U.S. pretrial imprisonment rate is 146 people per 100,000 people, while the
+median for the world is 33 people per 100,000 people. Id. at 5, 13. 27 Id. at 5, 13 (pretrial percent); Michelle Ye Hee Lee, Does the United States Really Have 5
+Percent of the World’s Population and One Quarter of the World’s Prisoners?, WASH. POST (Apr.
+30, 2015), http://wapo.st/1Q2ymvo [https://perma.cc/6PGN-8HV2] (world population percent). 28 Peter Wagner & Bernadette Rabuy, Mass Incarceration: The Whole Pie 2017, PRISON POL’Y
+INITIATIVE (Mar. 14, 2017), https://www.prisonpolicy.org/reports/pie2017.html [https://perma.cc/
+5KJB-TSYR].
+29 RAM SUBRAMANIAN ET AL., VERA INST. OF JUSTICE, INCARCERATION’S FRONT
+DOOR: THE MISUSE OF JAILS IN AMERICA 29 (2015). 30 MINTON & ZENG, supra note 24, at 1. 31 Stephen Demuth & Darrell Steffensmeier, The Impact of Gender and Race-Ethnicity in the
+Pretrial Release Process, 51 SOC. PROBS. 222, 222 (2004). 32 PRETRIAL JUSTICE INST., PRETRIAL JUSTICE: HOW MUCH DOES IT COST? 2 (2017). 33 SANTA CLARA CTY. HUMAN RELATIONS COMM’N, REPORT ON THE “PUBLIC FORUM
+FOR FAMILY AND FRIENDS OF INMATES” 36–37 (2016). 34 Barker v. Wingo, 407 U.S. 514, 533 (1972). 35 Paul Heaton et al., The Downstream Consequences of Misdemeanor Pretrial Detention, 69
+STAN. L. REV. 711, 714–16 (2017); see also Samuel R. Wiseman, Fixing Bail, 84 GEO. WASH. L.
+REV. 417, 419 (2016). 36 MARGARET NOONAN ET AL., BUREAU OF JUSTICE STATISTICS, U.S. DEP’T OF
+JUSTICE, MORTALITY IN LOCAL JAILS AND STATE PRISONS, 2000–2013 — STATISTICAL
+TABLES 1 (2015).
+2018] BAIL REFORM AND RISK ASSESSMENT 1129
+And those are just the most visible problems. Empirical studies are
+beginning to confirm what many have long suspected: Pretrial detention
+results in worse case outcomes and has a criminogenic effect on people
+— that is, detaining someone pretrial makes that person more likely
+to commit a crime in the future.37 One study found that people who
+were detained pretrial were more likely to be sentenced to jail or prison
+than similarly situated people who were released before trial.38 People
+detained pretrial are also more likely to face longer sentences.39 Even
+brief stays in jail increase someone’s likelihood of committing crimes in
+the future.40 And those who spend more than twenty-four hours in jail
+but are released pretrial are less likely to make their court dates than
+those who spend less time in jail.41
+High-profile lawsuits and court decisions from across the country are
+challenging contemporary bail practices. The Chief Judge of Cook
+County, Illinois issued an order forbidding judges from setting bail beyond
+what a defendant can afford to pay.42 The Massachusetts Supreme
+Judicial Court recently held that judges must “consider a defendant’s
+financial resources” before setting bail.43 Last spring, a federal judge
+granted a preliminary injunction to plaintiffs who had sued Harris
+County, Texas over its money bail practices.44 And a federal judge enjoined
+money bail practices for those accused of misdemeanors in
+Calhoun, Georgia.45 The Justice Department under President Obama
+adopted the position that it is unconstitutional to hold people in jail
+pretrial because they can’t afford bail.46 And the American Bar
+Association now officially supports money bail reform.47
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+37 Heaton et al., supra note 35, at 714, 718; CHRISTOPHER T. LOWENKAMP ET AL., LAURA &
+JOHN ARNOLD FOUND., THE HIDDEN COSTS OF PRETRIAL DETENTION 4 (2013). 38 LAURA & JOHN ARNOLD FOUND., PRETRIAL CRIMINAL JUSTICE RESEARCH
+SUMMARY 2 (2013) [hereinafter PRETRIAL RESEARCH SUMMARY]. 39 Id. 40 LOWENKAMP ET AL., supra note 37, at 4. 41 PRETRIAL RESEARCH SUMMARY, supra note 38, at 5. 42 Richard A. Oppel Jr., Defendants Can’t Be Jailed Solely Because of Inability to Post Bail,
+Judge Says, N.Y. TIMES (July 17, 2017), https://nyti.ms/2vwx86I [https://perma.cc/6CWF-8A22]. 43 Brangan v. Commonwealth, 80 N.E.3d 949, 954 (Mass. 2017). 44 ODonnell v. Harris County, 251 F. Supp. 3d 1052, 1167 (S.D. Tex. 2017), appeal filed, No. 17-
+20333 (5th Cir. May 10, 2017). 45 Walker v. City of Calhoun, No. 4:15-CV-0170, 2017 WL 2794064, at *5 (N.D. Ga. June 16,
+2016), appeal filed, No. 17-13139 (11th Cir. July 13, 2017); see also Jon Schuppe, Cash Bail, a Centerpiece
+of the Justice System, Is Facing Its Undoing, NBC NEWS (Oct. 23, 2016, 2:40 PM),
+http://nbcnews.to/2eveitA [https://perma.cc/6K6X-ZFZF]. 46 Brief for the United States as Amicus Curiae Supporting Plaintiff-Appellee & Urging Affirmance
+on the Issue Addressed Herein at 13, 23, Walker v. City of Calhoun, 682 F. App’x. 721 (2017)
+(No. 16-10521). 47 Debra Cassens Weiss, ABA House Supports Money Bail System Reform, Ban on Solitary
+Confinement for Juveniles, ABA J. (Aug. 14, 2017, 1:44 PM), http://www.abajournal.com/news/
+article/aba_house_supports_bail_reform_other_criminal_justice_measures [https://perma.cc/769AZQC8].
+
+1130 HARVARD LAW REVIEW [Vol. 131:1125
+The rise of bail reform activism and legislation has been sudden and
+meteoric. Nonprofits are funding efforts to eliminate money bail in at
+least thirty-six states.48 In 2017, New Jersey replaced money bail with
+a risk assessment system.49 Colorado and Kentucky have revised their
+pretrial laws to discourage the use of money bail and adopt risk assessment
+tools.50 Los Angeles County is considering pretrial reform, but the
+California state government might pass statewide bail reform legislation
+first.51 Bail reform also enjoys bipartisan support. Last summer, Democratic
+Senator Kamala Harris and Republican Senator Rand Paul together
+introduced legislation that would provide federal funding to
+states to create policies reforming money bail.52
+A pretrial system without money bail is not a utopian fantasy. For
+decades Washington, D.C. has operated an effective pretrial system with
+almost no money bail.53 D.C. releases 94% of defendants pretrial,54 90%
+of whom make their court appointments, and 98% of whom are not
+rearrested for a violent crime pretrial.55 These appearance and publicsafety
+numbers are both higher than the national average.56
+Some reform advocates champion the adoption of pretrial risk
+assessment tools that use algorithms to predict a defendant’s risk of
+dangerousness and flight. According to one developer of a risk
+assessment tool, adopting a system “in which judges have access to
+scientific, objective risk assessment tools could further our central goals
+of increasing public safety, reducing crime, and making the most
+effective, fair, and efficient use of public resources.”57 Other models for
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+48 Schuppe, supra note 12. 49 AM. CIVIL LIBERTIES UNION OF N.J. ET AL., THE NEW JERSEY PRETRIAL JUSTICE
+MANUAL 5–7 (2016) [hereinafter NEW JERSEY BAIL MANUAL]. 50 COLO. CRIMINAL DEF. INST. ET AL., THE COLORADO BAIL BOOK: A DEFENSE
+PRACTITIONER’S GUIDE TO ADULT PRETRIAL RELEASE 4 (2015); Kentucky Pretrial Release
+Manual, THE ADVOCATE (Ky. Dep’t of Pub. Advocacy, Frankfort, Ky.), June 2013, at 19–21. 51 Editorial, Los Angeles Tiptoes Forward on Bail Reform, L.A. TIMES (Mar. 4, 2017),
+http://www.latimes.com/opinion/editorials/la-ed-bail-reform-20170304-story.html [https://perma.cc/
+Y2PY-QRAD]; Press Release, Office of Governor Edmund G. Brown Jr., Governor Brown, Chief
+Justice Cantil-Sakauye, Senator Hertzberg and Assemblymember Bonta Commit to Work Together
+on Reforms to California’s Bail System, (Aug. 25, 2017), https://www.gov.ca.gov/news.php?id=19917
+[https://perma.cc/4DVB-SHNR]. 52 Kamala D. Harris & Rand Paul, Opinion, Kamala Harris and Rand Paul: To Shrink Jails,
+Let’s Reform Bail, N.Y. TIMES (July 20, 2017), https://nyti.ms/2tu17jc [https://perma.cc/2HXMRWZH].
+53 PSA’s History, PRETRIAL SERVS. AGENCY FOR D.C., https://www.psa.gov/?q=about/
+history [https://perma.cc/969J-6K9R]. 54 PRETRIAL SERVS. AGENCY FOR D.C., RELEASE RATES FOR PRETRIAL DEFENDANTS
+WITHIN WASHINGTON, DC (2017). 55 Performance Measures, PRETRIAL SERVS. AGENCY FOR D.C., https://www.psa.gov/?q=
+data/performance_measures [https://perma.cc/AT9Y-V4EL]. 56 BRIAN A. REAVES, BUREAU OF JUSTICE STATISTICS, FELONY DEFENDANTS IN LARGE
+URBAN COUNTIES, 2009 — STATISTICAL TABLES 20–21 (2013). 57 LAURA & JOHN ARNOLD FOUND., RESEARCH SUMMARY: DEVELOPING A NATIONAL
+2018] BAIL REFORM AND RISK ASSESSMENT 1131
+reform not examined in this Note include community bail funds58 and
+switching from secured to unsecured bonds.59
+Pretrial risk assessment tools typically use actuarial data to predict
+how likely it is that someone will miss an upcoming court date or commit
+a crime before trial.60 These tools use a checklist of risk factors that
+statistically correlate with nonappearance in court or commission of a
+crime pretrial.61 For example, New Jersey teamed up with the Laura
+and John Arnold Foundation, which has created one of the most popular
+risk assessment tools: the Public Safety Assessment (PSA).62 The PSA
+looks to nine risk factors: age at current arrest, current violent offense,
+pending charges, prior misdemeanor conviction, prior felony conviction,
+prior violent conviction, prior failure to appear in past two years, prior
+failure to appear older than two years, and prior sentence to incarceration.63
+Based on a combination of these factors, a person receives three
+prediction scores: a “failure to appear” score, a “new criminal activity”
+score, and a “new violent criminal activity” score. For example, with
+the “new criminal activity” score, a defendant could get two points for
+being younger than twenty-two and one point for having missed a court
+date during the last two years.64 Those numbers would be added up
+into a raw score that would determine the person’s placement on a sixpoint
+scale from low to high risk.65
+NCA SCORE
+CONVERSION
+Raw
+Score
+Six Point
+Scale
+0 1
+1–2 2
+3–4 3
+5–6 4
+7–8 5
+9–13 6
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+MODEL FOR PRETRIAL RISK ASSESSMENT 2 (2013). 58 See generally Jocelyn Simonson, Bail Nullification, 115 MICH. L. REV. 585 (2017).
+59 See generally INSHA RAHMAN, VERA INST. OF JUSTICE, AGAINST THE ODDS:
+EXPERIMENTING WITH ALTERNATIVE FORMS OF BAIL IN NEW YORK CITY’S CRIMINAL
+COURTS (2017). 60 PRETRIAL JUSTICE INST., PRETRIAL RISK ASSESSMENT: SCIENCE PROVIDES
+GUIDANCE ON ASSESSING DEFENDANTS 3–4 (2015). 61 Id. at 3. 62 NEW JERSEY BAIL MANUAL, supra note 49, at 7. 63 LAURA & JOHN ARNOLD FOUND., PUBLIC SAFETY ASSESSMENT: RISK FACTORS AND
+FORMULA 2 (2016). New Jersey’s version of the PSA is slightly adapted for New Jersey law’s
+definition of felonies and misdemeanors. NEW JERSEY BAIL MANUAL, supra note 49, at 8. 64 NEW JERSEY BAIL MANUAL, supra note 49, at 9. 65 Id. at 4, 8–9.
+14%
+25%
+31%
+38%
+46%
+50%
+0%
+10%
+20%
+30%
+40%
+50%
+60%
+Failure Rate
+Six-Point Scale
+NEW CRIMINAL ACTIVITY
+1132 HARVARD LAW REVIEW [Vol. 131:1125
+Based on actuarial data, the PSA would predict that those who fall
+in the first bar on the new-criminal-activity scale have a 14% chance of
+committing an offense pretrial. At the other end, people who fall into
+bar six have an estimated 50% chance of a committing a pretrial offense.66
+The data from the risk assessment tools do not directly specify
+whether someone should be detained pretrial. Policymakers must independently
+decide the threshold level of risk that would require pretrial
+detention.
+There are substantial criticisms of risk assessment tools. Risk assessments
+depend upon criminal justice data that is neither neutral nor objective.
+American criminal justice has been shaped by our country’s
+legacy of slavery and racial discrimination, by decades of mass incarceration,
+by preventative policing and profiling that targets minority communities,
+by a gulf between those who vote on criminal justice and those
+who are affected by it, and by the explicit and implicit biases of people
+working in the system.67 Former Attorney General Eric Holder has
+shared concerns that risk assessments will result in greater racial disparities,68
+and Professor Bernard Harcourt predicts that actuarial methods
+will exacerbate racial and class biases.69 Professor Sonja Starr contends
+that actuarial tools dependent on “demographic, socioeconomic,
+family, and neighborhood variables” are unconstitutional, unwise, and
+inaccurate.70 Risk assessment tools may also be deficient because the
+data that inform the tools come from an environment where the only
+pretrial options are jail and personal recognizance. For example, the
+prediction that someone will miss a court date doesn’t consider how a
+text message reminder or bus pass from pretrial services could improve
+their chances of getting to court.71
+Proponents of pretrial risk assessment tools argue that even though
+the algorithms cannot fully shed the race or class bias inherent in the
+data, they are a net improvement over the current system in which
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+66 Charts reproduced from NEW JERSEY BAIL MANUAL, supra note 49, at 8. 67 See ANDREW GUTHRIE FERGUSON, THE RISE OF BIG DATA POLICING 47–51 (2017).
+See generally AM. CIVIL LIBERTIES UNION, RACIAL DISPARITIES IN SENTENCING (2014);
+ASHLEY NELLIS, THE SENTENCING PROJECT, THE COLOR OF JUSTICE: RACIAL AND
+ETHNIC DISPARITY IN STATE PRISONS (2016); WILLIAM J. STUNTZ, THE COLLAPSE OF
+AMERICAN CRIMINAL JUSTICE (2011). 68 Massimo Calabresi, Exclusive: Attorney General Eric Holder to Oppose Data-Driven Sentencing,
+TIME (July 31, 2014, 1:35 PM), http://ti.me/WNWHyW [https://perma.cc/TCQ6-T9DY]. 69 Schuppe, supra note 12. See generally BERNARD E. HARCOURT, AGAINST PREDICTION
+(2007). 70 Sonja B. Starr, Evidence-Based Sentencing and the Scientific Rationalization of Discrimination,
+66 STAN. L. REV. 803, 806 (2014). 71 Credit for this point is due to Alec Karakatsanis’s helpful comments on a previous draft of
+this Note.
+2018] BAIL REFORM AND RISK ASSESSMENT 1133
+judges’ and prosecutors’ biases are opaque and unknown.72 To minimize
+bias, the creators of tools like the PSA have chosen not to use demographic
+or socioeconomic data and have tried to calibrate the algorithms’
+use of criminal histories to reduce racial disparities.73 There has
+been little empirical research to see how these tools perform in practice,
+and more research is needed.74 It’s also unsettled whether algorithms
+will produce more transparency than the black box of a judge’s mind.
+The aura and complexity of big data pose the risk of concealing racial
+biases. The notions of objective data and computer algorithms can give
+false assurances of neutrality.
+Whether or not risk assessment tools are accurate or fair, they will
+not be a panacea for pretrial injustice because the injustices of our current
+pretrial system extend far beyond inaccurate predictions of defen
+dants’ future behavior. To highlight a few examples: 46% of pretrial
+defendants in New York City “end up going to jail for up to a week
+because they cannot pay in the narrow window of time between their
+arraignment and when the next bus [to jail on Rikers Island] leaves.”75
+Pregnant women incarcerated pretrial are often forced to endure labor
+while shackled to a bed and are separated from their babies within a
+day or two of giving birth.76 Women detained pretrial in Muskegon
+County, Michigan, have been routinely denied feminine hygiene products
+and forced to strip naked in front of male guards in order to shower
+or use the toilet.77 In litigation against Harris County, Texas’s bail practices,
+county lawyers defended the practice of imprisoning people pretrial
+on misdemeanor charges by claiming that people in county jail
+want to be there, especially when it’s cold outside. The federal judge in
+charge of the case found the argument “uncomfortably reminiscent of
+the historical argument that used to be made that people enjoyed slavery.”78
+Accurate predictions of pretrial risk are better than inaccurate
+ones, but even if accurate predictions are acheivable, they can only be
+one part in meaningful reform.
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+72 Schuppe, supra note 12. 73 See generally PRETRIAL JUSTICE INST., PRETRIAL RISK ASSESSMENT CAN PRODUCE
+RACE-NEUTRAL RESULTS (2017). 74 Id. at 4–5. Megan Stevenson, Assessing Risk Assessment 4 (George Mason Univ. Law & Econ.
+Research Paper, Working Paper No. 17-36, 2017) (on file with Harvard Law School Library). 75 Ashley Southall, To Shrink Jail Population, a Bail Program Is Expanding, N.Y. TIMES (Aug.
+29, 2017), https://nyti.ms/2wgBP84 [https://perma.cc/2XEL-DEMA]. 76 Alex Ruppenthal, Project Examines Pregnancy in Illinois, Cook County Prisons, CHI.
+TONIGHT (July 17, 2017, 6:48 AM), http://chicagotonight.wttw.com/2017/07/17/project-examinespregnancy-illinois-cook-county-prisons
+[https://perma.cc/L76X-3X79]. 77 Abuse and Neglect at Muskegon County Jail, AM. C.L. UNION OF MICH., http://www.
+aclumich.org/abuse-and-neglect-muskegon-county-jail [https://perma.cc/UU9K-KN8A]. 78 Editorial, Locked Up for Being Poor, N.Y. TIMES (May 5, 2017), https://nyti.ms/2pPeIyo
+[https://perma.cc/G5LV-LQ55].
+1134 HARVARD LAW REVIEW [Vol. 131:1125
+For better or worse, risk assessment tools are a central part of ongoing
+and contemplated reforms across the country. Independent of risk
+assessment’s limitations, errors, and biases, safeguards are needed to
+prevent manipulation of these tools toward carceral and unequal ends.
+II. LESSONS FROM SENTENCING REFORM
+Federal sentencing reform can be a useful lens for viewing contemporary
+bail reform efforts. Indeed, this Note is not the first bail scholarship
+to mine sentencing reform as an analogical resource. Professor
+Samuel Wiseman has similarly found that “the history of the sentencing
+reform movement reflects many of the challenges of the current bail
+system.”79 Like bail reform today, federal sentencing reform in the late
+1980s and early 1990s enjoyed bipartisan support. There was general
+agreement that the system was broken, that judges were making unprincipled
+decisions that resulted in unfair outcomes, and that a more
+empirical, data-driven approach might be the answer. Although federal
+sentencing reform did not pursue the decarceral goal of modern criminal
+justice reform efforts, sentencing reform endorsed a data-driven, smarton-crime
+strategy. Like modern bail reform efforts, federal sentencing
+reform involved the legislature upending an existing judicial practice
+and conferring expert authority on an independent agency — all in the
+hope of curbing abuses and ensuring more equal outcomes.
+By the mid-1980s, practitioners and academics were in agreement
+that federal sentencing was broken and that guidelines might help.80
+Three problems seemed to plague federal sentencing. First, there were
+wide sentencing disparities. Federal sentences varied from judge to
+judge and from one region of the country to another. Quasiexperimental
+studies revealed that, given the exact same fact pattern
+and sentencing law, judges within the same federal circuit would arrive
+at grossly divergent sentences.81 Second, federal sentencing had no consistent
+goals or underlying philosophy. Each federal judge employed
+their own theory of punishment — deterrence, retribution, incapacitation,
+rehabilitation, or some unknown combination of each.82 Third,
+prison sentences were indeterminate. Most sentences that judges imposed
+from the bench were open-ended and subject to review by a parole
+board.83
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+79 Wiseman, supra note 35, at 456. 80 Stephen Breyer, The Federal Sentencing Guidelines and the Key Compromises upon Which
+They Rest, 17 HOFSTRA L. REV. 1, 3 (1988). 81 Id. at 4–5 (citing S. REP. NO. 98-225, at 41 n.22 (1983)). 82 Paul J. Hofer & Mark H. Allenbaugh, The Reason Behind the Rules: Finding and Using the
+Philosophy of the Federal Sentencing Guidelines, 40 AM. CRIM. L. REV. 19, 20–21 (2003). 83 Frank O. Bowman, III, The Failure of the Federal Sentencing Guidelines: A Structural
+Analysis, 105 COLUM. L. REV. 1315, 1321–22 (2005).
+2018] BAIL REFORM AND RISK ASSESSMENT 1135
+Congress sought to remedy these problems through the Sentencing
+Reform Act of 1984,
+84 which established the Sentencing Commission
+and gave it the task of creating sentencing guidelines.85 These guidelines
+were intended to limit sentencing disparities and to ensure that sentences
+would “adhere to a consistent sentencing philosophy.”86 Congress
+also wanted sentencing judges to have an easy rubric for determining
+an appropriate sentence.87 The judge would tally up numbers associated
+with characteristics of the offense and characteristics of the offender
+and use a grid that would specify a sentencing range. This sentencing
+range would conform with the sentencing goals for the
+particular type of offense and particular type of offender.88 From the
+onset, the guidelines were to be informed by the Commission’s ongoing
+research in order to “develop means of measuring the degree to which
+the sentencing, penal, and correctional practices are effective in meeting
+the purposes of sentencing.”89
+Since the mid-1990s, “[f]ew outside the federal commission would
+disagree that the federal guidelines have been a disaster.”90 Two central
+problems have plagued the guidelines. First, federal sentencing failed
+as an expert, evidence-based endeavor. Almost from the get-go,
+Congress began to override the evidence-based reform goals of the
+guidelines by imposing congressionally determined guideline ranges and
+mandatory minimum sentences. Second, federal prosecutors have had
+too much power and leverage — both in individual cases and with sway
+over Congress — and have had no oversight and too few checks on that
+power.
+As one commentator succinctly put it, Congress “overrode the Guidelines,
+distorted their development, and ultimately betrayed sentencing
+reform.”91 Congress distorted federal sentencing through an ad hoc
+hodgepodge of sentencing statutes that failed to conform with a consistent
+sentencing or punishment goal. “Congress is of two minds on
+sentencing reform. One mind [relying on the Sentencing Commission]
+is dispassionate and learned, deliberating for decades in search of a ra–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+84 Pub. L. No. 98-473, tit. II, ch. 2, 98 Stat. 1987 (codified as amended in scattered sections of
+18 and 28 U.S.C.). 85 Id. at sec. 217, § 991, 98 Stat 2017–18. 86 S. REP. NO. 98-225, at 59. For more legislative background on the sentencing guidelines, see
+generally Kate Stith & Steve Y. Koh, The Politics of Sentencing Reform: The Legislative History of
+the Federal Sentencing Guidelines, 28 WAKE FOREST L. REV. 223 (1993). 87 Breyer, supra note 80, at 5. 88 28 U.S.C. § 991(b)(1)(B) (2012); 18 U.S.C. § 3553(a)(2)(A) (2012). 89 28 U.S.C. § 991(b)(2). 90 MICHAEL TONRY, SENTENCING MATTERS 11 (1996). 91 Paul Hofer, After Ten Years of Advisory Guidelines, and Thirty Years of Mandatory Minimums,
+Federal Sentencing Still Needs Reform, 47 U. TOL. L. REV. 649, 649 (2016).
+1136 HARVARD LAW REVIEW [Vol. 131:1125
+tional, comprehensive solution. The other [imposing mandatory minimums
+and sentencing ranges] is impulsive, reckless, driven by unquenchable
+political passions.”92
+For example, with the Anti-Drug Abuse Act of 198693 (ADAA),
+Congress introduced mandatory minimums and disparate sentences for
+crack and powder cocaine.94 The new law punished someone possessing
+one gram of crack cocaine the same as someone possessing one hundred
+grams of powder cocaine — without providing a rationale for the 100-
+to-1 ratio.95 Rather than being empirically precise, “[t]he ADAA was
+passed in the midst of public paranoia and outcry over the crack epidemic
+and the fear of AIDS being spread through drug use.”96 Because
+mandatory minimums and sentencing ranges are imposed as statutes by
+Congress, the Sentencing Commission is unable to change the sentences
+when evidence suggests that change is needed.97 For decades, the
+Sentencing Commission reported that the sentencing disparity was not
+justified and led “to anomalous results in which retail crack dealers g[ot]
+longer sentences than the wholesale drug distributors who suppl[ied]
+them the powder cocaine from which their crack [wa]s produced.”98
+More than 80% of people who received the heightened crack cocaine
+sentences were African American, even though most crack users were
+white or Hispanic.99
+In part, mandatory minimums were able to take hold because the
+Sentencing Commission could not agree upon sentencing goals. Among
+deterrence, just deserts, incapacitation, and rehabilitation, the Commission
+chose all of them and none of them.100 Rather than ensuring that
+a given sentence conformed with any underlying goal or bargained-for
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+92 Henry Scott Wallace, Mandatory Minimums and the Betrayal of Sentencing Reform: A Legislative
+Dr. Jekyll and Mr. Hyde, 40 FED. B. NEWS & J. 158, 158 (1993). 93 Pub. L. 99-570, 100 Stat. 3207 (1986) (codified as amended in scattered sections of the U.S.
+Code). 94 Id. § 1002, 100 Stat. at 3207-2 to -4. 95 William Spade, Jr., Beyond the 100:1 Ratio: Towards a Rational Cocaine Sentencing Policy,
+38 ARIZ. L. REV. 1233, 1252 (1996). 96 Christopher Mascharka, Comment, Mandatory Minimum Sentences: Exemplifying the Law
+of Unintended Consequences, 28 FLA. ST. U. L. REV. 935, 941 (2001).
+97 Francesca D. Bowman, Taking the Lead, 8 FED. SENT’G REP. 32, 32 (1995). 98 U.S. SENTENCING COMM’N, SPECIAL REPORT TO THE CONGRESS: COCAINE AND
+FEDERAL SENTENCING POLICY 159 (1995). 99 DEBORAH J. VAGINS & JESSELYN MCCURDY, AM. CIVIL LIBERTIES UNION, CRACKS IN
+THE SYSTEM: TWENTY YEARS OF THE UNJUST FEDERAL CRACK COCAINE LAW i (2006);
+see U.S. SENTENCING COMM’N, SPECIAL REPORT TO CONGRESS: COCAINE AND FEDERAL
+SENTENCING POLICY 102–03 (2002). In 2010, Congress somewhat reduced the disparities and
+eliminated the mandatory minimum for simple crack cocaine possession. Fair Sentencing Act of
+2010, Pub. L. No. 111-220, 124 Stat. 2372 (codified as amended in scattered sections of 21 and 28
+U.S.C.).
+100 See Breyer, supra note 80, at 15–17.
+2018] BAIL REFORM AND RISK ASSESSMENT 1137
+compromise between goals, the Sentencing Commission based the guideline
+ranges on the historical averages of sentences across the country —
+providing a statistically normative answer to a philosophically normative
+question.101 As one commentator described the Commission’s approach,
+“since people disagree over the aims of sentencing, it is best to
+have no rationale at all.”102
+As much as Congress was eager to meddle with the Sentencing
+Commission’s process, the Department of Justice was eager to take advantage
+of that meddling. “The failures of the guidelines can be traced
+to the breakdown of the institutional balance the Sentencing Reform
+Act was supposed to create. Power has consolidated in the hands of
+prosecutors at the case level and an alliance of the Department of Justice
+with Congress at the policy level.”103 Instead of letting the Sentencing
+Commission remain insulated from political pressures and free to base
+its decisions upon empirical research, the Department of Justice used its
+influence over Congress to threaten to circumvent the Commission with
+more legislatively enacted mandatory minimums.104 The Commission
+followed the direction of the Executive and Congress, approving harsher
+punishments that gave prosecutors at the case level more leverage over
+defendants.105
+At the case level, mandatory minimums and sentencing guidelines
+meant a loss of judicial discretion, which led to increased prosecutorial
+power. If a prosecutor convicted a defendant of a crime with a
+mandatory minimum sentence, a judge’s hands were tied at sentencing,
+no matter the severity of the federal penalty or the power of the
+mitigating circumstances. Federal prosecutors used this to their
+bargaining advantage. By threatening to prosecute someone with a
+litany of charges that carried mandatory minimums, prosecutors could
+more easily secure plea bargains.106 In the pre-Guidelines days, a
+defendant might have chanced it by going to trial. After all, even if the
+prosecutor won on all counts, the sentencing judge might not share the
+prosecutor’s bloodlust. But with mandatory minimums, the risk of trial
+carried greater and more certain costs.
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+101 Id. at 18. 102 Andrew von Hirsch, Federal Sentencing Guidelines: Do They Provide Principled Guidance?,
+27 AM. CRIM. L. REV. 367, 371 (1989). 103 Frank O. Bowman, III, The Failure of the Federal Sentencing Guidelines: A Structural
+Analysis, 105 COLUM. L. REV. 1315, 1315 (2005). 104 Rachel E. Barkow, Administering Crime, 52 UCLA L. REV. 715, 728 (2005) (“No other group
+comes close to prosecutorial lobbying efforts on crime issues.”). See generally Frank O. Bowman,
+III, Pour encourager les autres? The Curious History and Distressing Implications of the Criminal
+Provisions of the Sarbanes-Oxley Act and the Sentencing Guidelines Amendments that Followed, 1
+OHIO ST. J. CRIM. L. 373, 411–35 (2004). 105 See Bowman, supra note 97, at 32. 106 Barkow, supra note 104, at 728.
+1138 HARVARD LAW REVIEW [Vol. 131:1125
+III. APPLYING THE LESSON
+The history of sentencing reform warns that technocratic criminal
+justice reform can be vulnerable on nearly all fronts. Powerful system
+actors can hijack tools of reform toward their own economic, structural,
+and racial ends. In the face of political pressure and media attention,
+the same legislature that passes reform can waver in its commitment to
+evidence-based practices and undermine the project. And without buyin,
+aligned incentives, and limits on discretion, prosecutors and judges
+can manipulate technocratic reform. Technocratic tools can be useful,
+but they cannot answer tough normative questions at the heart of criminal
+justice.
+A. The Siren Song of Punishment
+Unless restrained, legislatures and agencies can undermine their own
+technocratic reform efforts, especially under the influence of the prosecutor
+lobby.107 This manipulation is already afoot in pretrial reform.
+Just as fears of a crack epidemic swept in the mandatory minimums that
+would define the sentencing guidelines,108 fears of violence from people
+released pretrial have begun to disrupt New Jersey’s risk assessment
+tools.109 After New Jersey adopted pretrial reform last year, a handful
+of people facing gun charges committed violent crimes after being released
+pretrial. One man allegedly murdered someone a few days after
+his release.110 Another man killed his ex-girlfriend and himself.111 In
+response, the state Attorney General’s office asked the Judiciary
+Committee to modify the inputs of the risk assessment tool in order to
+increase the dangerousness prediction for people charged with gun possession,
+and asked for those charges to automatically trigger a recommendation
+against release.112 The ACLU and New Jersey Public
+Defender’s office opposed the change, contending that any changes
+would be based on anecdotes, not empirical data.113 The Judiciary
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+107 See William J. Stuntz, The Pathological Politics of Criminal Law, 100 MICH. L. REV. 505,
+509–10 (2001). 108 States have similarly adjusted their sentencing guidelines in the face of high-publicity crimes
+or a sense of increased crime. Rakesh N. Kilaru, Comment, Guidelines as Guidelines: Lessons from
+the History of Sentencing Reform, 2 CHARLOTTE L. REV. 101, 110–11 (2010). 109 Schuppe, supra note 12. 110 Id. 111 Id. 112 Letter from Elie Honig, Dir., Div. of Criminal Justice, Office of the Att’y Gen. of N.J., to
+Judge Glenn A. Grant, Acting Admin. Dir. of the N.J. Courts (Apr. 7, 2017), https://www.documentcloud.org/documents/3676485-AG-letter-asking-for-bail-reform-changes.html
+[https://perma.cc/446VBKS4].
+113 Letter from Alexander Shalom, Senior Staff Att’y Gen., ACLU of N.J., to Judge Glenn
+A. Grant, Acting Admin. Dir. of the N.J. Courts (Apr. 17, 2017), https://www.documentcloud.
+org/documents/3676484-ACLU-s-letter-on-bail-reform.html [https://perma.cc/5W57-5LPB]; Letter
+2018] BAIL REFORM AND RISK ASSESSMENT 1139
+Committee largely acquiesced to the Attorney General’s request and
+made certain gun charges automatically trigger a presumption of detention,
+regardless of the risk assessment tool’s prediction.114 Ironically,
+just a few years ago the poster child for the injustice of the New Jersey
+bail system was a man who had been detained pretrial on — you guessed
+it — a gun possession charge. Because he could not afford $50,000 bail,
+Mustafa Willis lost his job and spent months in jail, only for prosecutors
+to drop the charges against him.115 In 2014, Willis testified about his
+experience before the state senate’s Law and Public Safety Committee
+when the Committee first considered bail reform.116
+Colorado has displayed similar tendencies. The state legislature has
+passed provisions that allow courts to bypass risk assessment tools and
+deny the possibility of release for people facing certain weaponpossession
+and sexual-assault charges.117
+The problem is not that legislatures or judicial committees are acting
+ultra vires when they meddle with or bypass risk assessment tools. On
+the contrary, the legislature has the legal authority to obliterate
+evidence-based practices altogether. But if a legislature commits to
+evidence-based tools, those evidence-based tools should remain
+grounded in evidence. Although Willie Horton media maelstroms can
+capture the attention of the public, evidence-based tools should be
+swayed by the totality of the data, not by moment-to-moment public
+and legislative whims.
+If New Jersey’s manipulation of risk assessment tools ends with
+increased detention for gun charges, then the state will retain a
+predominantly evidence-based system. But so long as some people are
+free before their trials, some of those people will commit crimes, and
+some of those crimes will be noteworthy. Just as a few noteworthy
+crimes gave support to manipulating the assessment tool for gun
+charges, new noteworthy crimes will support manipulating the process
+for other charges.
+To resist the siren song of one high-profile incident after another,
+legislatures should mimic Ulysses and tie themselves to the mast. When
+adopting bail reform legislation, legislatures should precommit to procedures
+and evidence-based justifications for modifying the risk assessment
+tools and pretrial recommendations. The inputs for the risk assessment
+tools should only allow for modification through aggregated
+evidence and analysis. And legislatures should make it difficult for
+themselves or the agencies they create to introduce any provisions that
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+from Joseph E. Krakora, Pub. Def., State of N.J. Office of the Pub. Def., to Judge Glenn A. Grant,
+Acting Admin. Dir. of the N.J. Courts (Apr. 18, 2017), https://www.documentcloud.org/
+documents/3676486-Public-defender-s-letter-on-bail-reform.html [https://perma.cc/S8Z9-43FF]. 114 Schuppe, supra note 12. 115 Id. 116 Id. 117 COLO. CRIMINAL DEF. INST. ET AL., supra note 50, at 4, 18.
+1140 HARVARD LAW REVIEW [Vol. 131:1125
+bypass the risk assessment tools. With these safeguards in place, legislative
+bodies can commit themselves to an evidence-based practice and
+prevent themselves from tampering with the evidence.
+B. Misaligned Incentives
+Just as federal prosecutors took advantage of mandatory minimums
+and sentencing guidelines to increase their leverage over defendants, impose
+harsher sentences, and fill federal prisons, local prosecutors and
+judges can be expected to take advantage of loopholes in pretrial procedures
+or quirks in the risk assessment tools. Even after pretrial reforms,
+judges and prosecutors retain the incentive to be too cautious releasing
+people pretrial because some released people will commit new crimes
+that will bring public scrutiny upon the judge or district attorney. An
+elected judge’s photo will show up in the newspaper when someone released
+pretrial commits a crime, but the newspapers won’t publish the
+judge’s photo when people released pretrial maintain their jobs, pay
+their rent, and keep their families intact.118 Judges and prosecutors —
+especially elected judges and prosecutors — have a stronger incentive to
+appear reform-minded than to follow through with reform. In recent
+years, many district attorneys have been elected with campaign rhetoric
+championing reform only to retreat to familiar practices once in office.119
+In the bail reform context, Wiseman has previously identified this disconnect
+between legislative reform and judicial action as a “principalagent”
+problem.120 More colloquially, it’s a “covering your ass” problem.
+In many jurisdictions that have adopted pretrial risk assessment
+tools, a defendant’s risk score creates a presumption for detention or a
+presumption against detention, but judges are not bound by the recommendation.
+Judges haven’t been particularly constrained to date. A
+Chicago Sun Times report found that judges in Cook County depart
+from risk assessment recommendations 85% of the time.121 In forthcoming
+empirical research on Kentucky judges’ practices after bail reform,
+Professor Megan Stevenson observes, “[i]f judges followed the recommendations
+associated with the risk assessment, 90% of defendants
+would be granted immediate non-financial release. In practice, only
+29% are released on non-monetary bond at the first bail-setting.”122 We
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+118 Ronald Kessler, I Set a Defendant Free and Got Blamed When He Raped Someone,
+MARSHALL PROJECT (Aug. 31, 2017, 10:00 PM), https://www.themarshallproject.org/2017/08/31/
+i-set-a-defendant-free-and-got-blamed-when-he-raped-someone [https://perma.cc/HKT3-BWQ3]. 119 Josie Duffy Rice, Cyrus Vance and the Myth of the Progressive Prosecutor, N.Y. TIMES (Oct.
+16, 2017), https://nyti.ms/2kRbIR8 [https://perma.cc/9ABE-9Z97]. 120 Wiseman, supra note 35, at 422–23. 121 Frank Main, Cook County Judges Not Following Bail Recommendations: Study, CHI. SUN
+TIMES (July 3, 2016, 9:00 PM), https://chicago.suntimes.com/news/cook-county-judges-notfollowing-bail-recommendations-study-find/
+[https://perma.cc/N7JX-YEWL]. 122 Stevenson, supra note 74, at 8.
+2018] BAIL REFORM AND RISK ASSESSMENT 1141
+should be wary of reading too much significance into short-term trends
+of judges following risk assessment recommendations and detaining
+fewer people, because, at least in Kentucky, those trends have diminished
+over time as judges return to familiar habits.123
+In states that adopt pretrial reforms, prosecutors and judges may
+also be able to take advantage of loopholes in the law. In New Jersey,
+there is a catch-all provision in the bail reform statute that allows a
+prosecutor to bypass the risk assessment recommendation and move for
+detention if the prosecutor “believes there is a serious risk that” the defendant
+will not show up to court or is too dangerous to be released.124
+New Jersey also has a catch-all provision that allows judges to impose
+additional conditions of release beyond what the risk assessment tool
+recommends.125 While not as severe as detention, excessive conditions
+of release can substantially restrict someone’s liberty and can potentially
+violate someone’s constitutional rights. For example, the release conditions
+of house arrest and wearing an electronic ankle monitor can foreclose
+job and education opportunities.126
+Just as federal prosecutors used the threat of mandatory minimums
+for plea bargaining leverage, local prosecutors can be overly punitive
+pretrial by overcharging. To successfully overcharge at the pretrial
+stage, prosecutors must meet the low threshold of probable cause for the
+charges filed.127 Often this involves reading a police report in the worst
+light possible for the defendant. For example, if a defendant is accused
+of kicking someone, then the district attorney can charge the kicker with
+assault, assault and battery, and assault and battery with a dangerous
+weapon (so long as the kicker was wearing a shoe).128 When bargaining
+for a plea, a prosecutor’s overcharging sensibilities are tempered by the
+range of likely trial outcomes. To convict the kicker of assault and battery
+with a dangerous weapon at trial, a prosecutor would have to convince
+a jury beyond a reasonable doubt that the shoe was a dangerous
+weapon. If the prosecutor overplays their hand when plea bargaining,
+the defense can call their bluff and go to trial. But at the pretrial stage,
+prosecutors can overcharge with impunity because probable cause is a
+low burden of proof, and prosecutors are free to amend or drop the
+charges later.129 For example, with New Jersey’s pretrial risk assessment
+tool, the current charge is one of the factors that determines
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+123 Id. at 7. 124 N.J. STAT. ANN. § 2A:162-19a(7)(a)–(b) (West 2017). 125 Id. § 2A:162-17b(2)(l). 126 See BAIL PRIMER, supra note 13, at 17. 127 Bennett L. Gershman, Prosecutorial Decisionmaking and Discretion in the Charging Function,
+62 HASTINGS L.J. 1259, 1263 (2011). 128 MASS. GEN. LAWS ch. 265, § 15A (2017); Commonwealth v. Charles, 785 N.E.2d 384, 386
+(Mass. App. Ct. 2003). 129 Available data suggests that the practice of amending charges varies across the country. For
+1142 HARVARD LAW REVIEW [Vol. 131:1125
+whether a defendant is flagged as high risk for committing a violent
+crime on release.130 If the charge is a violent one and the defendant is
+flagged, then the defendant will presumptively be incarcerated pretrial
+— regardless of the numbered score on the defendant’s risk assessment.
+Even if this defendant is released, this flag results in more onerous
+pretrial conditions for the defendant.131
+Some safeguards could help mitigate judges’ and prosecutors’ inclination
+or ability to take advantage of pretrial tools. The swell of support
+for criminal justice reform — and bail reform in particular — may
+change how judges and prosecutors relate to the electorate. Other safeguards
+include limiting the ability to depart from a risk assessment recommendation
+to release a defendant or making those departures more
+procedurally costly.
+Elections matter. To maintain public confidence, judges and prosecutors
+overincarcerate because the public pays attention to mistaken leniency
+and not mistaken detention. But in some places that’s starting
+to change. Every candidate in Brooklyn’s district attorney Democratic
+primary ran on a platform supporting bail reform.132 After civil rights
+groups sued Harris County, Texas, for its cash bail practices, the newly
+elected sheriff and district attorney abandoned their predecessors’ support
+of bail and have sided with the plaintiffs in the lawsuit.133 The
+Chief Justice of the Texas Supreme Court and a Court of Criminal
+Appeals Judge have both come out in support of pretrial reform in
+Texas.134 Larry Krasner, the recently elected District Attorney in Philadelphia,
+has promised to reform cash bail.135 If the public votes for
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+example, Pennsylvania prosecutors amend charges in 30% of cases, while Florida prosecutors
+amend charges in less than 10%. Compare Charge Reductions: Pennsylvania, MEASURES FOR
+JUSTICE, https://measuresforjustice.org/portal/exploration?l=PA&m=20 [https://perma.cc/V8FX4PTJ],
+with Charge Reductions: Florida, MEASURES FOR JUSTICE https://measuresforjustice.org/portal/exploration?l=FL&m=20
+[https://perma.cc/9BAV-CCJY]. 130 NEW JERSEY BAIL MANUAL, supra note 49, at 9. 131 Id. Wiseman emphasizes that the criminal charge is likely to be “only one factor of many to
+be considered in a defendant’s likely dangerousness.” Wiseman, supra note 35, at 476. But sometimes
+the charge is the factor that tilts the balance toward detention, and sometimes it can be the
+only factor that matters.
+132 Our Voter Guide for the 2017 Primary, WNYC NEWS (Aug. 29, 2017),
+https://www.wnyc.org/story/nyc-primary-election-guide-2017 [https://perma.cc/A4W8-KGM7] (enter
+Brooklyn Zip Code, “11214,” and select “DEM”; then select District Attorney; then select “Cash
+Bail” from pull-down menu).
+133 Michael Hardy, In Fight over Bail’s Fairness, a Sheriff Joins the Critics, N.Y. TIMES (Mar.
+9, 2017), https://nyti.ms/2mpD4g9 [https://perma.cc/H3BR-N844]. 134 Brian Rogers et al., Harris County Officials Weighing Options on Bail Reform Court Order,
+HOUS. CHRON. (May 2, 2017, 8:52 AM), http://www.chron.com/news/houston-texas/houston/
+article/Harris-County-officials-weighing-options-on-bail-11113241.php [https://perma.cc/E92M-WP6V]. 135 Civil Rights Lawyer Krasner Elected Philly’s Top Prosecutor, ASSOCIATED PRESS (Nov. 8,
+2017), https://www.apnews.com/7e9a9b2ea1c24f3eadcd854645767a41 [https://perma.cc/K777-DKHX].
+2018] BAIL REFORM AND RISK ASSESSMENT 1143
+pretrial leniency and continues to pay attention, judges and prosecutors
+are more likely to listen.
+States could also restrict departures from the risk assessment recommendations
+to release a defendant or make those departures more procedurally
+costly.136 Time is a great discipliner of overburdened attorneys
+and judges. In some states that have adopted bail reform, judges must
+specify their reasons for departing from the risk assessment tool’s recommendation
+— often on the record and in writing.137 But the judge’s
+decision is often only reviewed on appeal under an abuse of discretion
+standard,138 resulting in reversal only if the detention decision “‘rest[s]
+on an impermissible basis’ or was ‘based upon a consideration of irrelevant
+or inappropriate factors.’”139 Alternatively, states could require
+that a judge’s decision or prosecutor’s motion to depart from the risk
+assessment tool’s recommendation be made in writing and also be
+grounded in factors different than those that the risk assessment tool
+considers.140 And rather than subject these decisions to protracted appellate
+court review under an abuse of discretion standard, detention
+decisions could be subject to an accelerated or mandatory appeal under
+a more exacting standard. Wiseman has proposed the more radical solution
+of imposing mandatory bail guidelines on judges.141 The story of
+federal sentencing teaches us that removing judicial discretion only
+shifts that discretion elsewhere, for better or worse. But Wiseman’s proposal
+has some promise because, rather than shifting discretion to prosecutors
+who have similarly misaligned incentives, mandatory guidelines
+would largely shift discretion to the politically insulated agency that
+oversees the risk assessment tool.
+C. Technocratic Limits
+Technocracy can obscure but cannot answer important normative
+questions at the heart of pretrial justice. For sentencing reform, an indeterminate
+philosophy meant that there was no metric by which to
+measure whether the guidelines were achieving their intended results.
+Guidelines were supposed to resolve the competing goals of sentencing,
+but the Sentencing Commission was unable to arrive at a satisfactory
+compromise. There was no consensus over whether deterrence, retribution,
+incapacitation, or rehabilitation was paramount and no formula
+for balancing some combination of these philosophies.
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+136 Stevenson, supra note 74, at 58. 137 E.g., N.J. STAT. ANN. § 2A:162-23 (West 2017). 138 E.g., State v. Steele, 61 A.3d 174, 180 (N.J. Super. Ct. App. Div. 2013). 139 Id. at 34–35 (quoting Flagg v. Essex Cty. Prosecutor, 796 A.2d 182, 187–88 (N.J. 2002)). 140 See Wiseman, supra note 35, at 462. 141 Id. at 454–55.
+1144 HARVARD LAW REVIEW [Vol. 131:1125
+Pretrial reform also suffers from an indeterminate goal. There is
+broad consensus that better data should lead to better pretrial decisionmaking.
+As New Jersey’s former Attorney General said in her TED
+talk about bail reform, “I wanted to moneyball criminal justice,”142 referencing
+a book that chronicled the Oakland Athletics’ use of data and
+statistics to succeed in Major League Baseball.143 But unlike bail or
+sentencing reform, the Oakland Athletics had one undivided goal: to
+win baseball games.
+Pretrial justice and pretrial reform have competing goals that are not
+easily reconciled: preserving the presumption of innocence for people
+charged with crimes, imposing the least restrictive conditions on release,
+protecting the public from people charged with crimes, ensuring that
+people return to court, imposing detention in a racially and economically
+fair way, and reducing America’s astounding pretrial incarceration rate.
+A fleeting Twitter exchange between bail-reform advocates encapsulates
+this conflict. Danny Montes is the Alliances Director for Californians
+for Safety and Justice. He tweeted out a message in support of
+California bail reform, “Why Californians Need #BailReform ‘If someone
+can afford their bail even though they are a threat to public safety,
+they’re free to go. Our bail system should prioritize public safety, not
+wealth.’”144 His tweet was met with two replies from New York Legal
+Aid’s Decarceration Project, “Sorry, you have it backwards. Our bail
+system should prioritize release and decarceration above all else”145 and
+“Here’s a ?-Who gets to decide who is a ‘public safety risk’? Could that
+be anymore ambiguous? Jeff Sessions thinks it’s smoking weed.”146
+Tina Luongo from Legal Aid also replied, “pre-trial bail system should
+remember that EVERYONE is Presumed Innocent. Assessment of who
+could potentially be dangerous is dangerous.”147
+Technocratic tools can only do so much to achieve all of pretrial reform’s
+goals without tradeoffs. Given that bail is a suboptimal tool for
+achieving any pretrial goals, there should be some opportunity for improvements
+that reduce crime, reduce missed court dates, and increase
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+142 Kate Torgovnick May, The Moneyball Effect: How Smart Data Is Transforming Criminal
+Justice, Healthcare, Music, and Even Government Spending, TEDBLOG (Jan. 28, 2014, 12:26 PM),
+http://blog.ted.com/the-moneyball-effect-how-smart-data-is-transforming-criminal-justicehealthcare-music-and-even-government-spending
+[https://perma.cc/52GN-R8PW]. 143 MICHAEL LEWIS, MONEYBALL: THE ART OF WINNING AN UNFAIR GAME (2004). 144 Danny Montes (@Dannyoso), TWITTER (Aug. 17, 2017, 11:40 AM), https://
+twitter.com/Dannyoso/status/898253270136664064 [https://perma.cc/5PD2-V29R]. 145 Decarceration Project (@DecarcerateNYC), TWITTER (Aug. 17, 2017, 2:07 PM), https://
+twitter.com/DecarcerateNYC/status/898290148550389760 [https://perma.cc/A7YN-M3M5]. 146 Decarceration Project (@DecarcerateNYC), TWITTER (Aug. 17, 2017, 2:30 PM), https://
+twitter.com/DecarcerateNYC/status/898295875054731265 [https://perma.cc/8TU4-XJB4]. 147 Tina Luongo (@TMLuongo), TWITTER (Aug. 17, 2017, 1:58 PM), https://twitter.com/
+TMLuongo/status/898287985392721920 [https://perma.cc/BF3E-NKGP].
+2018] BAIL REFORM AND RISK ASSESSMENT 1145
+release.148 But the capacity for simultaneous improvements is limited.
+As recent empirical research indicates, at a certain point, efforts to protect
+the public through risk-based incarceration will come at the expense
+of efforts to decarcerate or preserve the presumption of innocence.149
+The opposite is also true: efforts to decarcerate or preserve the presumption
+of innocence will counteract efforts to maximize public safety.
+Risk assessment tools cannot answer a normative question at the
+heart of contemporary pretrial justice: to imprison someone for their
+future behavior, how certain must we be that the person will commit a
+crime or not appear in court?
+The risk threshold is the most important part of risk assessment tools
+because it marks the compromise between the presumption of innocence,
+decarceration, and public safety.150 With the sentencing guidelines,
+the philosophical impasse made room for an even larger problem:
+Congress’s vote of no confidence in the Commission and its imposition
+of mandatory minimums. Because there was no purpose, goal, or bargained-for
+compromise behind the sentencing guidelines’ length, legislative
+interference could not contradict the guidelines’ underlying goals.
+Within risk assessment-based bail reform, unless stakeholders bargain
+for and commit to a risk threshold that balances public safety, the presumption
+of innocence, and decarceration, subsequent changes to the
+threshold will not violate an underlying commitment. Even if risk assessment
+tools initially result in lower jail populations, the longterm stability
+of this reduction depends upon the risk threshold remaining
+constant.
+The agency or judiciary committee responsible for committing to a
+certain threshold should seek input from stakeholders and be transparent
+about the balance it strikes between competing pretrial values. New
+scholarship has begun to explore just how jurisdictions might practically
+reconcile competing pretrial goals and choose optimal risk levels.151 Until
+now, discussions of bail reform have been too vocal about the promise
+of data and too quiet about risk assessment’s attendant risk-threshold
+compromises. This silence risks mimicking the sentencing guidelines’
+approach that “since people disagree over the aims . . . it is best to have
+no rationale at all.”152
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+148 See Stevenson, supra note 74, at 55. 149 Id. at 8 (“[T]his Article should temper hopes that risk assessment will provide some sort of
+magic bullet that will lead to a large increase in the number of people released pretrial with no
+concomitant costs in terms of the crime or appearance rate.”).
+150 Sandra G. Mayson’s article, Bail Reform and Restraint for Dangerousness: Are Defendants a
+Special Case?, tackles this question head-on. 127 YALE L.J. (forthcoming 2018), https://ssrn.com/
+abstract=2826600 [https://perma.cc/C6T4-PDN9]. 151 See generally Shima Baradaran Baughman, Costs of Pretrial Detention, 97 B.U. L. REV. 1
+(2017); Crystal S. Yang, Toward an Optimal Bail System, 92 N.Y.U. L. REV. 1399 (2017). 152 von Hirsch, supra note 102, at 371.
+1146 HARVARD LAW REVIEW [Vol. 131:1125
+CONCLUSION
+If bail reform can learn from the history of the sentencing guidelines,
+new efforts at pretrial reform may find lasting success. If reformers are
+willing to pragmatically concede that pretrial detention based on dangerousness
+can overwhelm the presumption of innocence, then they
+should make sure that the game is worth the candle. Risk assessment
+tools do not alone ensure that our pretrial systems will move closer to
+decarceration and equality.153 Risk assessment tools are just that: tools.
+The tools can be wielded for justice or injustice. Jurisdictions without
+a commitment to equality and decarceration could use risk assessment
+tools and set the risk thresholds at levels that allow detention levels to
+remain constant or rise. Intentionally or not, these places could protect
+overincarceration and inequality behind the rhetoric of algorithms and
+big data. A bail-reform nightmare could come true: the same unequal,
+overly punitive system would hum along smoothly, but the political capital
+for reform would have been spent, and the injustice would be hidden
+behind a mask of evidence-based neutrality.
+The history of sentencing reform teaches us that data-driven reform
+is susceptible to meddling from the legislature and manipulation by
+judges and prosecutors. Without adequate safeguards in place, some
+jurisdictions may adopt risk assessment tools only to conceal and preserve
+our current system’s inequality and cruelty. Committing to a fixed
+public safety threshold, entrenching the evidence-based processes from
+outside interference, and tempering the misaligned incentives of judges
+and prosecutors are all indications that a jurisdiction can work toward
+a more equal, less punitive pretrial system.
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+153 For example, Kentucky’s recent pretrial reform, “[d]espite being crafted with the explicit goal
+of lowering incarceration rates, . . . led to only a trivial increase in pretrial release.” Stevenson,
+supra note 74, at 6.
