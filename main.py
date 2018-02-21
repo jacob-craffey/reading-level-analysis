@@ -37,24 +37,20 @@ def get_school_level(read_level):
 
 
 def load_synonyms():
-    global  synonyms
+    # Read in our pre-determined list of synonyms
+    global synonyms
     with open("Synonyms.txt", "r") as s_file:
         synonyms = [line.split() for line in s_file]
 
 
 def make_word_better(word):
+    # Loop through the word pairs
     for pairs in synonyms:
+        # Check that the given word equals the word-to-change
         if pairs[0] == word:
             print("Changing " + pairs[0] + " to " + pairs[1])
+            # Return the new word that is 'better'
             return pairs[1]
-    return word
-
-
-def make_word_worse(word):
-    for pairs in synonyms:
-        if pairs[1] == word:
-            print("Changing " + pairs[1] + " to " + pairs[0])
-            return pairs[0]
     return word
 
 
@@ -72,8 +68,8 @@ def main():
             words = line.split()
             # Counts the amount of periods in each line
             for word in words:
-                #word = make_word_better(word)
-                word = make_word_worse(word)
+                # Change the given word to a better word
+                word = make_word_better(word)
                 total_syllables += syllable_count(word)
                 if "." in word or '?' in word or ';' in word or '!' in word:
                     # print word
