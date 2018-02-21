@@ -9,10 +9,11 @@ def syllable_count(word):
     for index in range(1, len(word)):
         if word[index] in vowels and word[index - 1] not in vowels:
             count += 1
-            if word.endswith("e"):
-                count -= 1
+    if word.endswith("e") or word.endswith("ed"):
+        count -= 1
     if count == 0:
         count += 1
+    print str(word) + ": " + str(count)
     return count
 
 def get_school_level(read_level):
@@ -35,7 +36,6 @@ def get_school_level(read_level):
     else:
         return "error"
         
-
 def main():
     total_words = 0
     total_sentences = 0
@@ -50,7 +50,8 @@ def main():
             # Counts the amount of periods in each line
             for word in words:
                 total_syllables += syllable_count(word)
-                if "." in word:
+                if "." in word or '?' in word or ';' in word or '!' in word:
+                    #print word
                     total_sentences += 1
 
             # Counts each word on the current line
@@ -62,7 +63,7 @@ def main():
 
     read_level = 206.835 - 1.015 * (total_words/total_sentences) - (84.6 * (total_syllables/total_words))
     grade = get_school_level(read_level)
-    print grade + ': ' + str(read_level)
+    print grade + " " + str(read_level)
     return
 
 if __name__ == '__main__':
